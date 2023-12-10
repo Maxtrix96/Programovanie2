@@ -1,0 +1,4 @@
+Pre program na vypocitanie priemeru musi byt v originali 1. riadok prazdny a ziakov treba od seba oddelit novym riadkom a medzerou,
+("\n ", nie "\n"). Je to tak vo vzori. 
+
+

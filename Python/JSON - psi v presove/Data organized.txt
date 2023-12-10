@@ -1,0 +1,347 @@
+Prešov:
+       Antona Prídavka : 42
+       Magurská : 31
+       Prostějovská : 113
+       K amfiteátru : 13
+       Matice slovenskej : 32
+       Karpatská : 24
+       Mirka Nešpora : 56
+       Arm. gen. Svobodu : 22
+       Bezručova : 18
+       Kpt. Nálepku : 7
+       Martina Benku : 11
+       Petőfiho : 9
+       Protifašistických bojovníkov : 7
+       Volgogradská : 41
+       Zimný potok : 8
+       Čergovská : 18
+       Ďumbierska : 44
+       Exnárova : 26
+       Františkánske námestie : 5
+       Jurkovičova : 11
+       Justičná : 11
+       Košická : 6
+       Levočská : 39
+       Mukačevská : 37
+       Požiarnická : 16
+       Sabinovská : 43
+       Štefánikova : 9
+       Štúrova : 21
+       Tarasa Ševčenka : 11
+       Vajanského : 14
+       Vihorlatská : 29
+       Vlada Clementisa : 18
+       Aurela Stodolu : 5
+       Bajkalská : 26
+       Čapajevova : 16
+       Čerešňová : 18
+       Československej armády : 15
+       Dilongova : 16
+       Francisciho : 12
+       Fučíkova : 13
+       Hlavná : 15
+       Jesenského : 17
+       K Surdoku : 26
+       Kollárova : 14
+       Kotrádova : 6
+       Ku Brezinám : 6
+       Letná : 7
+       Majakovského : 6
+       Mičurinova : 15
+       Moyzesova : 10
+       Nábrežná : 8
+       Námestie 1. mája : 7
+       Októbrová : 36
+       Oravská : 10
+       Pavlovičovo námestie : 34
+       Sibírska : 40
+       Sídlisko duklianskych hrdinov : 15
+       Športová : 4
+       Terchovská : 15
+       Tomášikova : 19
+       Vansovej : 22
+       Višňová : 16
+       Zajačia : 9
+       Zemplínska : 3
+       Zimná : 12
+       17. novembra : 32
+       Alexandra Matušku : 9
+       Bernolákova : 14
+       Bikoš : 2
+       Bratislavská : 7
+       Buková : 5
+       Dargovská : 4
+       Dubová : 12
+       Dúbravská : 33
+       Engelsova : 6
+       Federátov : 9
+       Gorkého : 14
+       Grešova : 6
+       Horárska : 22
+       Horská : 4
+       Hviezdna : 5
+       Jabloňová : 7
+       Jána Bottu : 4
+       Jána Hollého : 4
+       Janka Borodáča : 4
+       Jánošíkova : 32
+       Janouškova : 10
+       Jelenia : 10
+       K Okruhliaku : 4
+       K Starej tehelni : 2
+       Komenského : 4
+       Kozmonautov : 2
+       Krížna : 6
+       Ku Kyslej vode : 3
+       Kúpeľná : 4
+       Kúty : 7
+       Kuzmányho : 3
+       Lesík delostrelcov : 6
+       Lesná : 8
+       Líščia : 3
+       Malinová : 7
+       Malkovská : 7
+       Marka Čulena : 26
+       Masarykova : 2
+       Maybaumova : 15
+       Medvedia : 4
+       Medzinárodného dňa žien : 2
+       Metodova : 3
+       Michala Bosáka : 2
+       Mojmírova : 5
+       Mudroňova : 7
+       Murárska : 7
+       Obrancov mieru : 19
+       Orgovánová : 11
+       Pavla Horova : 12
+       Plzenská : 5
+       Pod dubom : 4
+       Pod Kalváriou : 13
+       Pod Kamennou baňou : 19
+       Pod Šalgovíkom : 5
+       Pod Táborom : 6
+       Pod Vinicami : 8
+       Pod Wilec hôrkou : 21
+       Pöschlova : 8
+       Puškinova : 6
+       Rumanova : 4
+       Ružová : 7
+       Sázavského : 11
+       Sedliackeho povstania : 5
+       Severná : 14
+       Slávičia : 7
+       Smreková : 8
+       Srnčia : 4
+       Surdok : 6
+       Šafárikova : 14
+       Škultétyho : 5
+       Šoltésovej : 6
+       Šrobárova : 12
+       Tatranská : 17
+       Tehelná : 13
+       Údenárska : 4
+       Urbánkova : 6
+       Vodárenská : 17
+       Vydumanec : 27
+       Wolkerova : 8
+       Za Kalváriou : 36
+       Záborského : 6
+       Záhradná : 17
+       Zápotockého : 5
+       Železničiarska : 18
+       Alexeja Duchoňa : 1
+       Átriová : 6
+       Bachingerovka : 1
+       Baštová : 5
+       Bendíkova : 6
+       Björnsonova : 2
+       Borkut : 1
+       Botanická : 3
+       Broskyňová : 1
+       Budovateľská : 11
+       Bulharská : 1
+       Cemjata : 5
+       Dúhová : 1
+       Duklianska : 1
+       Fraňa Kráľa : 6
+       Hodžova : 3
+       Holländerova : 4
+       Hrušková : 2
+       Hviezdoslavova : 2
+       Jahodová : 11
+       Jána Béreša : 5
+       Jána Nováka : 6
+       Jána Pavla II. : 1
+       Jantárová : 2
+       Jarková : 2
+       Javorinská : 4
+       Jazdecká : 8
+       Jilemnického : 2
+       Konštantínova : 1
+       Kováčska : 2
+       Krátka : 4
+       Kvetná : 10
+       L. Novomeského : 3
+       Ľ. Podjavorinskej : 1
+       Lipová : 4
+       Matúša Trenčianskeho : 1
+       Mlynská : 6
+       Na Rúrkach : 11
+       Námestie Národného povstania : 1
+       Narcisová : 3
+       Nemčíkova : 2
+       Odborárska : 8
+       Okružná : 7
+       Partizánska : 2
+       Plavárenská : 3
+       Pod komínom : 2
+       Popradská : 5
+       Pustá dolina : 2
+       Radlinského : 2
+       Raymanova : 1
+       Sekčovská : 1
+       Sládkovičova : 8
+       Slivková : 1
+       Slnečná : 9
+       Slovenská : 1
+       Staré záhrady : 1
+       Stavbárska : 10
+       Súľovská : 2
+       Šidlovská : 10
+       Šmeralova : 4
+       Štefana Náhalku : 2
+       Turistická : 2
+       Veselá : 1
+       Veterná : 2
+       Východná : 1
+       Weberova : 1
+       Zabíjaná : 2
+       Záhradnícka : 4
+       Západná : 3
+       19. januára : 2  
+
+Nižná Šebastová:
+       Vranovská : 16
+       Trnková : 14
+       Železničná : 14
+       Ľubotická : 5
+       Belianska : 6
+       Družstevná : 6
+       Nová : 7
+       Pažica : 9
+       Slanská : 24
+       Strážnická : 9
+       Strojnícka : 7
+       Šebastovská : 11
+       Vodná : 8
+       Agátová : 1
+       Bociania : 1
+       Borovicová : 2
+       Fintická : 15
+       Garbiarska : 1
+       Gaštanová : 4
+       Genplk. Jána Ambruša : 2
+       Haburská : 4
+       Herlianska : 7
+       Hraničná : 1
+       Jarná : 3
+       Jedľová : 1
+       Južná : 2
+       K prameňu : 6
+       Limbová : 2
+       Lúčna : 4
+       Mateja Huľu : 1
+       Mateja Murgaša : 6
+       Poľná : 3
+       Potočná : 7
+       Rybárska : 5
+       Školská : 1
+       Topoľová : 1
+       Včelárska : 2
+       Za traťou : 3  
+
+Solivar:
+       Smetanova : 28
+       Lomnická : 11
+       Važecká : 16
+       Okrajová : 11
+       Pod Hrádkom : 7
+       Švábska : 62
+       Janáčkova : 19
+       Lidická : 9
+       Pri majáku : 5
+       Pri mlyne : 5
+       Banícka : 11
+       Boženy Němcovej : 9
+       Čajkovského : 13
+       Čipkárska : 5
+       Gápľová : 30
+       Chalupkova : 14
+       Chmeľová : 11
+       Jiráskova : 22
+       Kukučínova : 15
+       Lesnícka : 12
+       Na brehu : 15
+       Námestie osloboditeľov : 3
+       Padlých hrdinov : 8
+       Pionierska : 6
+       Pri hati : 13
+       Royova : 20
+       Sadová : 10
+       Solivarská : 16
+       Soľnobanská : 6
+       Šípková : 5
+       Urxova : 8
+       Úzka : 3
+       Valkovská : 8
+       Zlatobanská : 7
+       Arm. gen. Svobodu : 1
+       Bencúrova : 8
+       Bohúňova : 4
+       Jesenná : 2
+       K studničke : 1
+       Kamencová : 6
+       Košická : 3
+       Kraskova : 3
+       Kutuzovova : 4
+       Kysucká : 6
+       L. Novomeského : 3
+       Ľ. Podjavorinskej : 3
+       Na vyhliadke : 4
+       Ondavská : 7
+       Palackého : 1
+       Palárikova : 4
+       Pekná : 5
+       Pod Debrami : 1
+       Pod Turňou : 1
+       Pri Delni : 7
+       Soľanková : 3
+       Soľná : 3
+       Suchoňova : 1
+       Suvorovova : 8
+       Tajovského : 8
+       Tokajícka : 2
+       Zborovská : 1  
+
+Šalgovík:
+       Bažantia : 9
+       Hruny : 5
+       Jastrabia : 5
+       Kamenná : 6
+       Lastovičia : 3
+       Sekčovská : 13
+       Sokolia : 4
+       Sovia : 5
+       Astrová : 3
+       Drozdia : 1
+       Holubia : 3
+       Labutia : 4
+       Levanduľová : 1
+       Muškátová : 1
+       Orlia : 3
+       Pávia : 3
+       Teriakovská : 2  
+
+:
+        : 1  
+

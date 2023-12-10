@@ -1,0 +1,16 @@
+
+ 
+Ziak1: Celkovy priemer: 2.08
+SJL:1,1,1,2,3,4,1 Priemer: 1.86
+ANJ:1,2,3 Priemer: 2.0
+GEG:2,3,3 Priemer: 2.67
+ 
+Ziak2: Celkovy priemer: 2.71
+SJL:5,1,3,2,3,4,1,5,3,1 Priemer: 2.8
+ANJ:5,1,2,3,4,5 Priemer: 3.33
+GEG:5,2,3,3,1,1,1,1 Priemer: 2.12
+ 
+Ziak3: Celkovy priemer: 2.79
+SJL:4,2,4,3,4,5,2,1,4,2 Priemer: 3.1
+ANJ:1,2,3,4,5,1 Priemer: 2.67
+GEG:1,3,4,4,2,2,2,2 Priemer: 2.5

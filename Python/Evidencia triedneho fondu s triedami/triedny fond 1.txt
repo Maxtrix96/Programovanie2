@@ -1,0 +1,15 @@
+Karol, -1
+Karol, 70
+Karol, -40
+Jana, -10
+Jozef, 30
+Kristina, 50
+Oxana, -60
+Oxana, 2
+Jozef, -20
+Ucka, -200
+Sponzor, 300
+Jan, 69
+Karol, 100
+Anton, +69
+Mikulas, -350

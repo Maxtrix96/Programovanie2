@@ -1,0 +1,4 @@
+obecStart = 1 
+obecEnd = 8 
+highwayStart = 5 
+highwayEnd = 12

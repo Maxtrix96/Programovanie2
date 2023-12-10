@@ -1,0 +1,9 @@
+Alice, -15.0
+Bob, +5.0
+Charlie, -30.0
+David, +64.0
+Eve, +117.0
+Frank, -7.0
+Grace, +106.0
+Mallory, -50.0
+Sponsor, +100.0

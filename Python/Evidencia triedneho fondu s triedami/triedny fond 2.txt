@@ -1,0 +1,17 @@
+Alice, -5
+Bob, 20
+Alice, -10
+Charlie, -30
+David, 15
+Eve, 25
+Frank, -12
+Grace, 8
+Bob, -15
+Mallory, -50
+Sponsor, 100
+Eve, -8
+Frank, 5
+David, -20
+Grace, 98
+Eve, +100
+David, 69

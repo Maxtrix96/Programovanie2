@@ -1,0 +1,1 @@
+Ked rozlozime cislo 69420 na prvocisla dostaneme: 2, 2, 3, 5, 13, 89

@@ -1,0 +1,8 @@
+Karol, 29
+Jana, -10
+Jozef, 10
+Kristina, 50
+Oxana, -58
+Ucka, -200
+Sponzor, 300
+Zostatok, 121

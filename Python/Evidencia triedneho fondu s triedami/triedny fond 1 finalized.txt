@@ -1,0 +1,10 @@
+Karol, +129.0
+Jana, -10.0
+Jozef, +10.0
+Kristina, +50.0
+Oxana, -58.0
+Ucka, -200.0
+Sponzor, +300.0
+Jan, +69.0
+Anton, +69.0
+Mikulas, -350.0

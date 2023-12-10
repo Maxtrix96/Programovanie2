@@ -1,0 +1,15 @@
+Vzdialenost prejdena: 2.2 km, 
+19 minut celkovo, 
+132.0 km/h priemerna rychlost, 
+7 min najdlhsieho stupania, 
+1550 m najdlhsieho stupania, 
+5 min najdlhsieho klesania, 
+500 m najdlhsieho klesania, 
+-100 konecne prevysenie, 
+18.0 km/h bola najvyssia dosiahnuta rychlost, 
+0.72 km/h bola nanizsia dosiahnuta rychlost, 
+Najprudsie stupanie nastalo na useku c. 3, 
+Najprudsie stupanie nastalo na useku c. 14
+
+
+Vstup bola neznama 'progress': [[200, 0], [210, 200], [212, 500], [240, 650], [200, 890], [180, 1000], [170, 1100], [190, 1169], [210, 1181], [230, 1200], [250, 1300], [270, 1400], [290, 1500], [300, 1600], [150, 1700], [140, 1800], [130, 1900], [120, 2000], [110, 2100], [100, 2200]]

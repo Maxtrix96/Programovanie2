@@ -1,0 +1,19 @@
+V ktorom roku zacla 1. sv. vojna?
+V ktorom roku skoncila 1. sv. vojna?
+V ktorom roku zacla 2. sv. vojna?
+V ktorom roku skoncila 2. sv. vojna?
+Napis priklad na expoencianclnu funkciu.
+Vypocitaj: 2+2 = ?
+Kolko prstov ma na pravej ruke clovek?
+Kolko litrov by sme mali za jeden den vypit?
+Byt ci nebyt?
+dosli mi napady 1
+dosli mi napady 2
+dosli mi napady 3
+dosli mi napady 4
+dosli mi napady 5
+dosli mi napady 6
+dosli mi napady 7
+dosli mi napady 8
+dosli mi napady 9
+dosli mi napady 10

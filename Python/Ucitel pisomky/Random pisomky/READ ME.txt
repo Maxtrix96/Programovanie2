@@ -1,0 +1,1 @@
+malo by fungovat pre n pocet testov, pocet otazok na test nesmie prekrocit pocet riadkov(uloh) v ulohy.txt
