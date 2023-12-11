@@ -1,8 +1,15 @@
 import tkinter as tk
 import random
 
-MAX_HEIGHT = 700
+MAX_HEIGHT = 500
 MAX_WIDTH = 700
+
+root = tk.Tk()
+root.title("Random squares test")
+
+canvas = tk.Canvas(root, width=MAX_WIDTH, height=MAX_HEIGHT)
+canvas.pack()
+canvas.create_rectangle(2, 2, MAX_WIDTH, MAX_HEIGHT, fill="white")
 
 def get_random_hex_color():
     color = "#{:06x}".format(random.randint(0, 0xFFFFFF))
@@ -36,12 +43,6 @@ def draw_square_on_click(click):
 
     color = get_random_hex_color()
     canvas.create_rectangle(x1, y1, x2, y2, fill=color)
-
-root = tk.Tk()
-root.title("Random squares test")
-
-canvas = tk.Canvas(root, width=MAX_WIDTH, height=MAX_HEIGHT)
-canvas.pack()
 
 canvas.bind("<Button-1>", draw_square_on_click)
 canvas.bind("<KeyPress - a>", draw_square) # ????
