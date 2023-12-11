@@ -7,9 +7,9 @@ MAX_WIDTH = 700
 root = tk.Tk()
 root.title("Random squares test")
 
-canvas = tk.Canvas(root, width=MAX_WIDTH, height=MAX_HEIGHT)
+canvas = tk.Canvas(root, width=MAX_WIDTH, height=MAX_HEIGHT, bg="white")
 canvas.pack()
-canvas.create_rectangle(2, 2, MAX_WIDTH, MAX_HEIGHT, fill="white")
+
 
 def get_random_hex_color():
     color = "#{:06x}".format(random.randint(0, 0xFFFFFF))
