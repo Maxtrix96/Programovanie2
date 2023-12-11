@@ -1,7 +1,7 @@
 import tkinter as tk
 import random
 
-MAX_HEIGHT = 500
+MAX_HEIGHT = 700
 MAX_WIDTH = 700
 
 root = tk.Tk()
