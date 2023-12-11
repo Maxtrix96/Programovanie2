@@ -10,17 +10,17 @@ def get_random_hex_color():
 
 def set_size():
     min_dimension = min(MAX_WIDTH, MAX_HEIGHT)
-    size = random.randrange(0, int(min_dimension / 15))
+    size = random.randrange(0, int(min_dimension / 2))
     return size
 
 def draw_square():
     size = set_size()
 
-    x1 = random.randrange(MAX_HEIGHT - size)
+    x1 = random.randrange(MAX_WIDTH - size)
     y1 = random.randrange(MAX_HEIGHT - size)
     
-    x2 = min(x1 + size, MAX_HEIGHT)
-    y2 = min(y1 + size, MAX_HEIGHT)
+    x2 = x1 + size
+    y2 = y1 + size
 
     color = get_random_hex_color()
     canvas.create_rectangle(x1, y1, x2, y2, fill=color)
@@ -31,7 +31,7 @@ def draw_square_on_click(click):
     x1 = click.x
     y1 = click.y
     
-    x2 = min(x1 + size, MAX_HEIGHT)
+    x2 = min(x1 + size, MAX_WIDTH)
     y2 = min(y1 + size, MAX_HEIGHT)
 
     color = get_random_hex_color()
@@ -44,7 +44,7 @@ canvas = tk.Canvas(root, width=MAX_WIDTH, height=MAX_HEIGHT)
 canvas.pack()
 
 canvas.bind("<Button-1>", draw_square_on_click)
-canvas.bind("<KeyRelease-a>", draw_square) # ????
+canvas.bind("<KeyPress - a>", draw_square) # ????
 '''
 <KeyPress>: Triggered when any key on the keyboard is pressed.
 <KeyRelease>: Triggered when any key on the keyboard is released.
