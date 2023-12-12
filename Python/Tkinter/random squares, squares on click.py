@@ -16,8 +16,8 @@ def get_random_hex_color():
     return color
 
 def set_size():
-    min_dimension = min(MAX_WIDTH, MAX_HEIGHT)
-    size = random.randrange(0, int(min_dimension / 2))
+    minDimension = min(MAX_WIDTH, MAX_HEIGHT)
+    size = random.randrange(0, int(minDimension / 2))
     return size
 
 def draw_square():
