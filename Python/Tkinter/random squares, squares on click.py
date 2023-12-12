@@ -10,14 +10,13 @@ root.title("Random squares test")
 canvas = tk.Canvas(root, width=MAX_WIDTH, height=MAX_HEIGHT, bg="white")
 canvas.pack()
 
-
 def get_random_hex_color():
     color = "#{:06x}".format(random.randint(0, 0xFFFFFF))
     return color
 
 def set_size():
     minDimension = min(MAX_WIDTH, MAX_HEIGHT)
-    size = random.randrange(0, int(minDimension / 2))
+    size = random.randrange(0, int(minDimension / 2)) 
     return size
 
 def draw_square():
@@ -35,8 +34,8 @@ def draw_square():
 def draw_square_on_click(click):
     size = set_size()
 
-    x1 = click.x
-    y1 = click.y
+    x1 = click.x - size // 2
+    y1 = click.y - size // 2
     
     x2 = min(x1 + size, MAX_WIDTH)
     y2 = min(y1 + size, MAX_HEIGHT)
