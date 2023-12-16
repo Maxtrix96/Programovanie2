@@ -33,10 +33,6 @@ def main():
             except ValueError:
                 raise ValueError("Nebol zadaný správny vpis! [class.__organize()]\nSprávny vpis: Meno, suma\nnapr. Jano, 8")
             
-            #if "Zostatok" in self.__transDict:
-            #    del self.__transDict["Zostatok"]
-            #self.__transDict["Zostatok"] = sum(self.__transDict.values())
-            #self.__total = self.self.__transDict["Zostatok"]
             self.__total = sum(self.__transDict.values())
 
         def append_transaction(self, inputData: str) -> None: 
