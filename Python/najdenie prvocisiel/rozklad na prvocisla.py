@@ -30,7 +30,15 @@ def find_prime_numbers(myNumber: int):
 
     return foundPrimeNumbers
 
-user_input = int(input("Zadaj prirodzene cislo ktoreho prvocisla mam najst: "))
+
+while True:
+    user_input = input("Zadaj prirodzene cislo ktoreho prvocisla mam najst: ")
+    try:
+        user_input = int(user_input)
+        break
+    except ValueError:
+        user_input = input("Zadaj prirodzene cislo ktoreho prvocisla mam najst: ")
+
 
 primeNumbers = find_prime_numbers(user_input)
 writing = f"Ked rozlozime cislo {user_input} na prvocisla dostaneme: {', '.join(list(map(str, primeNumbers)))}"
