@@ -9,8 +9,8 @@ To accommodate this, nums1 has a length of m + n, where the first m elements den
 and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
 """
 
-
 class Solution:
+    #@staticmethod
     def merge(self, nums1: list[int], m: int, nums2: list[int], n: int) -> None:
         """
         Do not return anything, modify nums1 in-place instead.
