@@ -1,7 +1,6 @@
 import os
 import math 
 
-
 ABSPATH_script = os.path.abspath(__file__)
 RELPATH_writingFile = os.path.join("..", "vysledok.txt")
 ABSPATH_writingFile = os.path.join(ABSPATH_script, RELPATH_writingFile)
@@ -14,8 +13,11 @@ def is_prime(n):
             return False
     return True
     
-
-def find_prime_numbers(myNumber: int):
+def find_prime_numbers(myNumber: int) -> list[int]:
+    if myNumber == 1:
+        return [1]
+    elif myNumber == 0:
+        return [0]
     foundPrimeNumbers = []
     
     for num in range(2, int(math.sqrt(myNumber)+1), ): 
@@ -30,18 +32,20 @@ def find_prime_numbers(myNumber: int):
 
     return foundPrimeNumbers
 
-
-while True:
+def get_user_input():
     user_input = input("Zadaj prirodzene cislo ktoreho prvocisla mam najst: ")
     try:
         user_input = int(user_input)
-        break
+        return user_input
     except ValueError:
-        user_input = input("Zadaj prirodzene cislo ktoreho prvocisla mam najst: ")
+        print("Nezadal si číslo!")
+        return get_user_input()
 
+user_input = get_user_input()
+print(user_input)
 
 primeNumbers = find_prime_numbers(user_input)
-writing = f"Ked rozlozime cislo {user_input} na prvocisla dostaneme: {', '.join(list(map(str, primeNumbers)))}"
+writing = f"Ked rozlozime cislo {user_input} na prvocisla dostaneme: {', '.join(map(str, primeNumbers))}"
 
 with open(ABSPATH_writingFile, "w", encoding="utf-8") as file:
     file.write(writing)

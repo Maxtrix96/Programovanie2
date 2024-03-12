@@ -23,11 +23,29 @@ class Solution:
     def romanToInt(self, s: str) -> int:
         dictionary = {
             "I": 1,
-            "v": 5,
+            "V": 5,
             "X": 10,
             "L": 50,
             "C": 100,
             "D": 500,
             "M": 1000
         }
+        s = s[::-1]
+        result:int = 0
+        prev:int = 0
+
+        for numeral in s:
+            val:int = dictionary[numeral]
+
+            if val < prev:
+                result -= val
+            else:
+                result += val
+
+            prev:int = val
         
+        return result
+
+    
+test = Solution()
+print(test.romanToInt("XCIV"))
