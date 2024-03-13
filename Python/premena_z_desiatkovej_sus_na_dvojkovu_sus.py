@@ -18,8 +18,8 @@ def premena_10_na_2(vstup):
     str_cislo2 = ""
 
     while podiel > 0:
-        zvysok = podiel%2
-        podiel = int(podiel/2)
+        zvysok = podiel % 2
+        podiel //= 2
         str_cislo2 = str_cislo2 + str(zvysok)
     cislov2 = str_cislo2[::-1]
     return cislov2

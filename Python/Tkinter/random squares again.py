@@ -3,7 +3,7 @@ import random
 
 MAX_WIDTH = 600
 MAX_HEIGHT = 600
-MAX_DEVIATION = 1
+MAX_DEVIATION = 2
 
 root = tk.Tk()
 root.title("Random squares")
