@@ -1,4 +1,3 @@
-
 def je_cislo(vstup:str):
     try:
         int(vstup)
@@ -42,4 +41,3 @@ while True:
         break 
     except ValueError as chyba:
         print(chyba)
-
