@@ -20,6 +20,8 @@ def get_random_size():
     num = random.randint(1, limit // MAX_DEVIATION)
     return num
 
+agh = "#{06x}".format(random.randint(0, 0xFFFFFF))
+
 def create_square(color):
     size = get_random_size()
     x1 = random.randrange(1, MAX_WIDTH-size)
