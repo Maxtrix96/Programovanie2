@@ -12,8 +12,10 @@ def bin_to_dec(num:str) -> int:
 
     return sum(result)
 
-array = [1, 2, 4, 9, 1]
+"""try:
+    user_input = input("Zadaj kladné číslo v dvojkovej sústave: ")
+    print(bin_to_dec(user_input))
+except ValueError as err:
+    print(err)"""
 
-are_all_int = all(isinstance(x, int) for x in array)
-
-print(are_all_int)
+print(bin_to_dec("010"))
