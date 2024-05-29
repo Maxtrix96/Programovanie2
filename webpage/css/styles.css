@@ -1,0 +1,53 @@
+.penis {
+    display: block;
+    width: 300px;
+    height: 200px;
+    color: rgb(127, 243, 4);
+    background-color: rgb(90, 89, 98);
+    border: 1px solid rgb(223, 121, 70);
+    margin: 10px;
+    padding: 5px, 5px, 200px, 300px; /*The padding property can take one, two, three, or four values, which represent the padding on the top, right, bottom, and left sides of the element, respectively */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+}
+
+.background {
+
+    display: flex;
+    width: auto;
+    height: auto;
+    color: rgb(127, 243, 4);
+    background-image: url("../img/rooster.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(59, 155, 193);
+    margin: 10px;
+    padding: 5px, 5px, 200px, 300px; /*The padding property can take one, two, three, or four values, which represent the padding on the top, right, bottom, and left sides of the element, respectively */
+    position: relative;
+}
+
+.penis_quality{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(231, 111, 117);
+    font-weight: bold;
+}
+
+.button_padding {
+    padding: 5px, 5px, 200px, 200px;
+    position: fixed;
+    top: 230px;
+    left: 50px;
+}
+
+.cockImage {
+    display: block;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    margin: 10px;
+    padding: 5px; /*The padding property can take one, two, three, or four values, which represent the padding on the top, right, bottom, and left sides of the element, respectively */
+    position: relative;
+}
