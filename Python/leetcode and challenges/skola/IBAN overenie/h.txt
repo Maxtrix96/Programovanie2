@@ -1,0 +1,37 @@
+Kód     Znak.   Názov
+0200 	SUBA 	Všeobecná úverová banka, a.s.
+0900 	SLSP 	Slovenská sporiteľňa, a.s.
+0720 	NBSL 	Národná banka Slovenska
+1100 	TATR 	Tatra banka, a.s.
+1111 	UNCR 	UniCredit Bank Czech Republic and Slovakia, a.s., pobočka zahraničnej banky
+3000 	SLZB 	Slovenská záručná a rozvojová banka, a.s.
+3100 	LUBA 	Sberbank Slovensko, a.s. 
+5200 	OTPV 	OTP Banka Slovensko, a.s. 
+5600 	PKBA 	Prima banka Slovensko, a.s.
+5900 	PSSP 	Prvá stavebná sporiteľňa, a.s.
+6500 	PABK 	Poštová banka, a.s.
+7300 	INGBSA 	ING Bank N.V.,  pobočka zahraničnej banky
+7500 	CEKOSA 	Československá obchodná banka, a.s.
+7930 	SPVW 	Wüstenrot stavebná sporiteľňa, a.s.
+8050 	COBASA 	Commerzbank Aktiengesellschaft, pobočka zahraničnej banky, Bratislava
+8100 	KOMBSA 	Komerční banka, a.s., pobočka zahraničnej banky
+8120 	BASL 	Privatbanka, a.s.
+8130 	CITISA 	Citibank Europe plc, pobočka zahraničnej banky
+8170 	CSOBSA 	ČSOB stavebná sporiteľňa, a.s.
+8160 	EXSR 	EXIMBANKA SR
+8180 	SPSR 	Štátna pokladnica
+8191 	CDSA 	Centrálny depozitár cenných papierov SR, a.s.
+8400 	MAISSA 	Banco Banif Mais S.A., pobočka zahraničnej banky
+8320 	JTBPSA 	J&T BANKA, a.s., pobočka zahraničnej banky
+8330 	FIOZSA 	Fio banka, a.s., pobočka zahraničnej banky
+8350 	ABNASA 	The Royal Bank of Scotland plc, pobočka zahraničnej banky
+8360 	BREXSA 	mBank S.A., pobočka zahraničnej banky
+8370 	SMWRSA 	Oberbank AG  pobočka zahraničnej banky v Slovenskej republike
+8390 	AKCTSA 	AKCENTA, spořitelní a uvěrní družstvo, pobočka Košice
+8410 	ZUNO 	ZUNO BANK AG, pobočka zahraničnej banky
+8420 	BKSB 	BKS Bank AG, pobočka zahraničnej banky v SR
+8430 	KDBHSA 	KDB Bank Europe Ltd., pobočka zahraničnej banky
+9950 	PKSR 	First Data Slovakia, s.r.o.
+9951 	BACP 	Burza cenných papierov v Bratislave, a.s.
+9952 	TTPA 	Trust Pay, a.s.
+2010 	FIOZ 	Fio banka, a.s.
