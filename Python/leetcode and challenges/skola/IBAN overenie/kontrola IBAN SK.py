@@ -1,12 +1,12 @@
-pomocka  = "SK  69  8180 000000 0009876543"
-pomocka  = "SK  62  8180 000000 0098765432"
+#pomocka = "SK  69  8180 000000 0009876543"
+#pomocka = "SK  62  8180 000000 0098765432"
 #           01  23  4567 890123 4567890123
 #           00  00  0000 001111 1111112222
 #                  |pred|cislie|c.uctu
 
-test_IBAN = "SK6981800000000009876543"
+test_IBAN = "SK6981800001000009876543"
 def kontrola_IBAN(IBAN:str):
-    must_be_SK = False # nastavte podla potreby, ak True -> prve dve pismena musia byt SK, inak vrat nie
+    must_be_SK:bool = False # nastavte podla potreby, ak True -> prve dve pismena musia byt SK, inak vrat nie
 
     if must_be_SK:
         if not IBAN[0:2] == "SK":
@@ -32,18 +32,20 @@ def kontrola_IBAN(IBAN:str):
         adjusted_IBAN:int = int("".join(list(map(str, test_IBAN))))
         valid_IBAN:bool = adjusted_IBAN % 97 == 1
 
-        return True if valid_IBAN else False
+        return valid_IBAN
 
     def modulo_11(BBAN:str):
         weights:list = [1, 2, 4, 8, 5, 10, 9, 7, 3, 6] # váhy
         pref:list = list(map(int, BBAN[4:10]))[::-1] # 6-cif. predcislie 1 2 3 4 5 6 | 6 5 4 3 2 1
         account_num = list(map(int, BBAN[10:20]))[::-1] # 10-cif. cislo uctu
+        print(f"{account_num= }")
         products:list = [] 
         for i in range(len(weights)):
             if i <= 5:
                 products.append(weights[i] * pref[i])
             products.append(weights[i] * account_num[i])
-
+        print(f"{products= }")
+        print(f"{sum(products)= }")
         valid:bool = sum(products) % 11 == 0
         return valid
     
@@ -53,7 +55,7 @@ def kontrola_IBAN(IBAN:str):
     is_valid_bank = BBAN[0:4] in valid_bank
     passed_modulo_11 = modulo_11(BBAN)
     passed_mod_97 = mod_97(IBAN)
-    #print(f"{is_alnum= } {is_alpha= } {is_digit= } {is_valid_bank= } {passed_modulo_11= } {passed_mod_97= }")
+    print(f"{is_alnum= } {is_alpha= } {is_digit= } {is_valid_bank= } {passed_modulo_11= } {passed_mod_97= }")
 
     if is_alnum and is_alpha and is_digit and is_valid_bank and passed_modulo_11 and passed_mod_97:
         return "ano"
@@ -75,7 +77,7 @@ def accept_input():
     for IBAN in codes_to_test:
         kontrola_IBAN(IBAN)
 
-accept_input() # pre system PALMA STROM
+#accept_input() # pre system PALMA STROM
 
 """def test_provided_codes():
     codes = ["SK6981800000000009876543", "SK6781800000000009876543", "SK6281800000000098765432"]
