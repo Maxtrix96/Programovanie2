@@ -9,6 +9,8 @@ def generate(n: int, s:int) -> list:
     success_list: list = [] 
     def try_comb(n: int, s:int) -> list: 
         if s <= 0 or n > s or n <= 0: return [] 
+        #rek cast
+        
         current_attempt: list = [] 
         for i in range(n): 
             options = range(s-n-i, s-i) # vsetky moznosti tohto indexu, s tym, ze neskusa nepotrebne hodnoty 
