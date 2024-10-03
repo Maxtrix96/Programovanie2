@@ -25,7 +25,7 @@ def makeMirrorImage(num):
 
 #print(makeMirrorImage(1234567890)) 
 
-test_result = find_sequences(3, 9) 
+test_result = find_sequences(3, 8) 
 
 print(f"list of items: {test_result}") 
 print(f"dlzka zoznamu: {len(test_result)}") 

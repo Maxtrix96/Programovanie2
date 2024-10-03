@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Container</title>
+    <style>
+        /* Styling for the scrollable container */
+        #itemContainer {
+            width: 300px;   /* Set width (xpx) */
+            height: 200px;  /* Set height (ypx) */
+            border: 2px solid black;  /* Border around the container */
+            padding: 10px;  /* Padding inside the container */
+            overflow-y: auto;  /* Enable vertical scrolling */
+            background-color: #f9f9f9;  /* Light background for better readability */
+        }
+        
+        /* Style individual list items */
+        .item {
+            padding: 5px;
+            border-bottom: 1px solid #ccc;  /* Optional line between items */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Scrollable Item List</h1>
+
+<!-- Scrollable container for the items -->
+<div id="itemContainer"></div>
+
+<script>
+    // Example array with n elements
+    const items = [
+        "Item 1", "Item 2", "Item 3", "Item 4", "Item 5",
+        "Item 6", "Item 7", "Item 8", "Item 9", "Item 10",
+        "Item 11", "Item 12", "Item 13", "Item 14", "Item 15"
+    ];
+
+    // Function to populate the container with items from the array
+    function displayItems() {
+        const container = document.getElementById('itemContainer');
+        
+        // Loop through the array and add each item as a div to the container
+        items.forEach(item => {
+            const itemElement = document.createElement('div');
+            itemElement.classList.add('item');  // Add a class for styling
+            itemElement.textContent = item;     // Set the text content
+            container.appendChild(itemElement); // Add the item to the container
+        });
+    }
+
+    // Call the function to display the items
+    displayItems();
+</script>
+
+</body>
+</html>

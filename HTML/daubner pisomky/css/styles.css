@@ -1,0 +1,45 @@
+.hlStranka{
+    overflow-x: auto;
+}
+
+#obsahSuboru {
+    color: black;
+    border: solid 5px;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 8px;
+    width: fit-content;
+}
+
+#zadaniePoctuOtazok {
+    color: black;
+    margin-top: 20px;
+}
+
+#vybranaOtazka {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.ramec{
+    margin-top: 5px;
+    width: 600px;
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: auto;
+    border: 3px solid black;
+    display: inline-block;
+}
+
+#priestorVsetkychOtazok {
+    background-color: rgb(239, 239, 239);
+}
+
+#priestorVybranychOtazok {
+    background-color: rgb(239, 239, 239);
+}
+
+.textVOtazkovychRamcoch {
+    margin: 5px;
+    
+}

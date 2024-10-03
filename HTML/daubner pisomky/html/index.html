@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="jednoduchá web stránka">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Generator pisomiek</title>
+        <script src="../js/script.js"></script>
+    </head>
+    
+<body class="hlStranka">
+    <div class="hlStranka">
+        <!-- vlozenie suboru -->
+        <p class="oznamovaciText">Vlozte subor s otazkami</p>
+        <input type="file" id="zadanePisomky" accept=".txt" placeholder="Vybrať súbor"> 
+        <button onclick="ulozitOtazky()" type="submit">Ulozit</button>
+        <br>
+        <!-- zadanie poctu otazok -->
+        <input id="zadaniePoctuOtazok" type="Text" placeholder="Zadajte pocet otazok">
+        <br>
+
+        <!-- <p id="obsahSuboru">Nothing to show</p> -->
+        <!-- zobraznie vlozeneho suboru + vygenerovanych otazok vo vlastnych ramcoch-->
+        <div class="ramec" id="priestorVsetkychOtazok">
+            <h4>Otazky v subore</h4>
+        </div>
+        <div class="ramec" id="priestorVybranychOtazok">
+            <h4>Vybrane otazky</h4>
+        </div>
+    </div>
+</body>
+</html>
