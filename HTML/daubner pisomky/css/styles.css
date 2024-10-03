@@ -1,24 +1,11 @@
 .hlStranka{
     overflow-x: auto;
-}
-
-#obsahSuboru {
-    color: black;
-    border: solid 5px;
-    border-radius: 20px;
-    margin: 5px;
-    padding: 8px;
     width: fit-content;
 }
 
 #zadaniePoctuOtazok {
     color: black;
     margin-top: 20px;
-}
-
-#vybranaOtazka {
-    color: black;
-    border-bottom: 2px solid black;
 }
 
 .ramec{
@@ -41,5 +28,14 @@
 
 .textVOtazkovychRamcoch {
     margin: 5px;
-    
+    size: 100cm;
+}
+
+#textCelySubor {
+    font-size: 15px;
+    color: blue;
+}
+
+#textJednotliveOtazky {
+    color: black;
 }
