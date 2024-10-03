@@ -1,18 +1,20 @@
 function ulozitOtazky() {
     if (!document.getElementById("priestorVsetkychOtazok").contains(document.getElementById("textCelySubor"))) { // spracuje a prida text len v pripade, že tam este zoznam neni
-        const vlozenePisomky = document.getElementById("zadanePisomky");
+        const vlozenePisomky = document.getElementById("zadanePisomky"); // <input> id
         const file = vlozenePisomky.files[0];
+        const questionsCounter = document.getElementById("pocetOtazokID");
         
         if (file) {
-            const reader = new FileReader();
+            const reader = new FileReader(); // nacit FileReader
             reader.onload = function(event) {
-                const textVSubore = event.target.result;
+                const textVSubore = event.target.result; 
                 const textContainer = document.getElementById("priestorVsetkychOtazok");
                 const extrahovanyText = document.createElement("pre");
                 extrahovanyText.classList.add("textVOtazkovychRamcoch");
                 extrahovanyText.id = "textCelySubor";
-                extrahovanyText.textContent = textVSubore;
-                textContainer.appendChild(extrahovanyText);
+                extrahovanyText.textContent = textVSubore; // ulozit do prvku text
+                textContainer.appendChild(extrahovanyText); // vlozit spracovany text do stranky
+                questionsCounter.innerText = textVSubore.split("\n").length // vypist pocet otazok
             };
 
             reader.readAsText(file);
@@ -42,7 +44,7 @@ function selectRandom() {
     const questionsArray = questions.split("\n") // premena textu na zoznam
     // cast na generovanie nahodneho poradia
     var shuffledArray = shuffleArray(questionsArray) // nahodne zoradeny zoznam otazok
-    var selectedQuestions = shuffledArray.slice(0, numberOfQuestions+1); // var namiesto const pre pripad generovania viackrat
+    var selectedQuestions = shuffledArray.slice(0, numberOfQuestions); // var namiesto const pre pripad generovania viackrat
     var formatedQuestions = selectedQuestions.join("\n") // spojit zoznam do stringu
 
     // pridanie otazok do priestoru pre vygenerovanu pisomku

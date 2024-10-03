@@ -39,3 +39,10 @@
 #textJednotliveOtazky {
     color: black;
 }
+
+#pocetOtazokID {
+    color: black;
+    font-weight: bold;
+    background-color: rgb(210, 210, 210);
+    width: fit-content;
+}
