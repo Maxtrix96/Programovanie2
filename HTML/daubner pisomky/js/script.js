@@ -1,28 +1,30 @@
 function ulozitOtazky() {
-    if (!document.getElementById("priestorVsetkychOtazok").contains(document.getElementById("textCelySubor"))) { // spracuje a prida text len v pripade, že tam este zoznam neni
-        const vlozenePisomky = document.getElementById("zadanePisomky"); // <input> id
-        const file = vlozenePisomky.files[0];
-        const questionsCounter = document.getElementById("pocetOtazokID");
-        
-        if (file) {
-            const reader = new FileReader(); // nacit FileReader
-            reader.onload = function(event) {
-                const textVSubore = event.target.result; 
-                const textContainer = document.getElementById("priestorVsetkychOtazok");
-                const extrahovanyText = document.createElement("pre");
-                extrahovanyText.classList.add("textVOtazkovychRamcoch");
-                extrahovanyText.id = "textCelySubor";
-                extrahovanyText.textContent = textVSubore; // ulozit do prvku text
-                textContainer.appendChild(extrahovanyText); // vlozit spracovany text do stranky
-                questionsCounter.innerText = textVSubore.split("\n").length // vypist pocet otazok
-            };
+    if (document.getElementById("priestorVsetkychOtazok").contains(document.getElementById("textCelySubor"))) { 
+        document.getElementById("textCelySubor").remove() // vymazat stary text pri pridani novej pisomky
+    } 
+    const vlozenePisomky = document.getElementById("zadanePisomky"); // <input> id
+    const file = vlozenePisomky.files[0];
+    const questionsCounter = document.getElementById("pocetOtazokID");
+    
+    if (file) {
+        const reader = new FileReader(); // nacit FileReader
+        reader.onload = function(event) {
+            const textVSubore = event.target.result; 
+            const textContainer = document.getElementById("priestorVsetkychOtazok");
+            const extrahovanyText = document.createElement("pre");
+            extrahovanyText.classList.add("textVOtazkovychRamcoch");
+            extrahovanyText.id = "textCelySubor";
+            extrahovanyText.textContent = textVSubore; // ulozit do prvku text
+            textContainer.appendChild(extrahovanyText); // vlozit spracovany text do stranky
+            questionsCounter.innerText = textVSubore.split("\n").length // vypist pocet otazok
+        };
 
-            reader.readAsText(file);
+        reader.readAsText(file);
 
-        } else {
-            alert("Zvolte .txt subor");
-        }
+    } else {
+        alert("Zvolte .txt subor");
     }
+    
 }
 
 
