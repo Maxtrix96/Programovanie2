@@ -56,3 +56,23 @@ function selectRandom() {
     testElement.innerText = formatedQuestions; // vlozenie textu s otazkami
     container.appendChild(testElement); // nasledne pridanie do ramca
 }
+
+function downloadFile() {
+    const container = document.getElementById("priestorVybranychOtazok"); 
+    const pisomkaNaStiahnutie = document.getElementById("textJednotliveOtazky"); // priestor drziaci text vygen. pisomiek
+    if (container.contains(pisomkaNaStiahnutie)) {
+        const textNaStiahnutie = pisomkaNaStiahnutie.innerText; // vygen. pisomka vo forme str
+        const blob = new Blob([textNaStiahnutie], {type: "text/plain"}); // subor 
+        
+        // pripojit link a stiahnut subor
+        const linkNaStiahnutie = document.createElement("a"); 
+        linkNaStiahnutie.href = URL.createObjectURL(blob); 
+        linkNaStiahnutie.download = "Písomka"; 
+        document.body.appendChild(linkNaStiahnutie);
+        linkNaStiahnutie.click();
+        document.body.removeChild(linkNaStiahnutie);
+    } else {
+        alert("Nie je čo stiahnuť!")
+    }
+
+}
