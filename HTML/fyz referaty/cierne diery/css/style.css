@@ -74,39 +74,52 @@ body{
     display: flex;
     flex-direction: row; 
     justify-content: center;
-    width: 99vw; 
+    width: 98vw; 
     height: 85vh;
     padding: 20px; 
     overflow: hidden; 
-    border: solid 0px white;
+    border: solid 10px black;
     border-radius: 30px;
     flex: 1;
-    margin: 20px 0 0 0;
+    margin: 20px auto 0 auto;
     overflow-wrap: break-word; 
-    
 }
 
 .subContainer{
-    border: solid 1px grey;
+    border: solid 1px transparent;
     border-radius: 0;
-    position: relative;
     margin: 0 auto;
 }
 
 /* box-shadow: h-offset v-offset blur-radius spread-radius color inset; */
 
 #mainContentContainer{
-    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5), 0 0 20px 5px rgba(255, 255, 255, 0.5) inset;
+    box-shadow: 0 0 5px 5px rgba(182, 176, 176, 0.5), 0 0 20px 5px rgba(255, 255, 255, 0.5) inset;
 }
 
 #mainTextArea{
-    width: 70%;
-    height: 80%;
+    flex: 1 1 75%;
+    height: 95%;
     margin: 0;
     justify-content: left;
+    overflow-y: auto;
 }
 
 #buttonArea{
-    justify-content: flex-start;
-    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    flex: 1 1 25%;
+    height: 95%;
+}
+
+.textChangeButton{
+    position: relative;
+    width: 80%;
+    height: 70%;
+    background: none;
+    color: white;
+    border: solid 1px transparent;
+    border-radius: 100%;
+    box-shadow: 10px 10px 15px rgb(170, 42, 3), -10px -10px 20px 1px rgba(170, 20, 3, 0.319);
+    overflow: hidden;
 }

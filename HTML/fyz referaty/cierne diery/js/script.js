@@ -12,7 +12,7 @@ function createDot() {
     dot.style.top = `${Math.random() * 99}%`; 
     
     // Set random animation delay and duration 
-    dot.style.animationDuration = `${2.0 + Math.random()*2}s`;
+    dot.style.animationDuration = `${2.0 + Math.random()*2.0}s`;
     dot.style.animationDelay = `${Math.random() * 2}s`;
 
     background.appendChild(dot); 
