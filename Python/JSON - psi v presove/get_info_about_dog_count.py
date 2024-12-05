@@ -26,6 +26,7 @@ def get_dog_count_per_street(myData: dict): #len ulice bez organizovania do cast
         streetDogDict[streetName] += int(section["Počet_psov"]) #prida pocet psov na ulici
     
     return streetDogDict    
+#get_dog_count_per_street(data)
 
 def get_total_dog_count(myData: dict): 
     dogCount = sum([int(section["Počet_psov"]) for section in myData])

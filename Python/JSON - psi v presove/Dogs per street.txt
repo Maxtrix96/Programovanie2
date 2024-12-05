@@ -1,1 +1,332 @@
-spusti program
+Ulica:   Antona Prídavka : 42 
+Ulica:   Vranovská : 16 
+Ulica:   Magurská : 31 
+Ulica:   Prostějovská : 113 
+Ulica:   K amfiteátru : 13 
+Ulica:   Matice slovenskej : 32 
+Ulica:   Smetanova : 28 
+Ulica:   Karpatská : 24 
+Ulica:   Mirka Nešpora : 56 
+Ulica:   Arm. gen. Svobodu : 23 
+Ulica:   Bezručova : 18 
+Ulica:   Kpt. Nálepku : 7 
+Ulica:   Martina Benku : 11 
+Ulica:   Petőfiho : 9 
+Ulica:   Protifašistických bojovníkov : 7 
+Ulica:   Volgogradská : 41 
+Ulica:   Zimný potok : 8 
+Ulica:   Lomnická : 11 
+Ulica:   Važecká : 16 
+Ulica:   Trnková : 14 
+Ulica:   Železničná : 14 
+Ulica:   Čergovská : 18 
+Ulica:   Ďumbierska : 44 
+Ulica:   Exnárova : 26 
+Ulica:   Františkánske námestie : 5 
+Ulica:   Jurkovičova : 11 
+Ulica:   Justičná : 11 
+Ulica:   Košická : 9 
+Ulica:   Levočská : 39 
+Ulica:   Mukačevská : 37 
+Ulica:   Požiarnická : 16 
+Ulica:   Sabinovská : 43 
+Ulica:   Štefánikova : 9 
+Ulica:   Štúrova : 21 
+Ulica:   Tarasa Ševčenka : 11 
+Ulica:   Vajanského : 14 
+Ulica:   Vihorlatská : 29 
+Ulica:   Vlada Clementisa : 18 
+Ulica:   Okrajová : 11 
+Ulica:   Pod Hrádkom : 7 
+Ulica:   Švábska : 62 
+Ulica:   Ľubotická : 5 
+Ulica:   Aurela Stodolu : 5 
+Ulica:   Bajkalská : 26 
+Ulica:   Čapajevova : 16 
+Ulica:   Čerešňová : 18 
+Ulica:   Československej armády : 15 
+Ulica:   Dilongova : 16 
+Ulica:   Francisciho : 12 
+Ulica:   Fučíkova : 13 
+Ulica:   Hlavná : 15 
+Ulica:   Jesenského : 17 
+Ulica:   K Surdoku : 26 
+Ulica:   Kollárova : 14 
+Ulica:   Kotrádova : 6 
+Ulica:   Ku Brezinám : 6 
+Ulica:   Letná : 7 
+Ulica:   Majakovského : 6 
+Ulica:   Mičurinova : 15 
+Ulica:   Moyzesova : 10 
+Ulica:   Nábrežná : 8 
+Ulica:   Námestie 1. mája : 7 
+Ulica:   Októbrová : 36 
+Ulica:   Oravská : 10 
+Ulica:   Pavlovičovo námestie : 34 
+Ulica:   Sibírska : 40 
+Ulica:   Sídlisko duklianskych hrdinov : 15 
+Ulica:   Športová : 4 
+Ulica:   Terchovská : 15 
+Ulica:   Tomášikova : 19 
+Ulica:   Vansovej : 22 
+Ulica:   Višňová : 16 
+Ulica:   Zajačia : 9 
+Ulica:   Zemplínska : 3 
+Ulica:   Zimná : 12 
+Ulica:   17. novembra : 32 
+Ulica:   Janáčkova : 19 
+Ulica:   Lidická : 9 
+Ulica:   Pri majáku : 5 
+Ulica:   Pri mlyne : 5 
+Ulica:   Belianska : 6 
+Ulica:   Družstevná : 6 
+Ulica:   Nová : 7 
+Ulica:   Pažica : 9 
+Ulica:   Slanská : 24 
+Ulica:   Strážnická : 9 
+Ulica:   Strojnícka : 7 
+Ulica:   Šebastovská : 11 
+Ulica:   Vodná : 8 
+Ulica:   Alexandra Matušku : 9 
+Ulica:   Bernolákova : 14 
+Ulica:   Bikoš : 2 
+Ulica:   Bratislavská : 7 
+Ulica:   Buková : 5 
+Ulica:   Dargovská : 4 
+Ulica:   Dubová : 12 
+Ulica:   Dúbravská : 33 
+Ulica:   Engelsova : 6 
+Ulica:   Federátov : 9 
+Ulica:   Gorkého : 14 
+Ulica:   Grešova : 6 
+Ulica:   Horárska : 22 
+Ulica:   Horská : 4 
+Ulica:   Hviezdna : 5 
+Ulica:   Jabloňová : 7 
+Ulica:   Jána Bottu : 4 
+Ulica:   Jána Hollého : 4 
+Ulica:   Janka Borodáča : 4 
+Ulica:   Jánošíkova : 32 
+Ulica:   Janouškova : 10 
+Ulica:   Jelenia : 10 
+Ulica:   K Okruhliaku : 4 
+Ulica:   K Starej tehelni : 2 
+Ulica:   Komenského : 4 
+Ulica:   Kozmonautov : 2 
+Ulica:   Krížna : 6 
+Ulica:   Ku Kyslej vode : 3 
+Ulica:   Kúpeľná : 4 
+Ulica:   Kúty : 7 
+Ulica:   Kuzmányho : 3 
+Ulica:   Lesík delostrelcov : 6 
+Ulica:   Lesná : 8 
+Ulica:   Líščia : 3 
+Ulica:   Malinová : 7 
+Ulica:   Malkovská : 7 
+Ulica:   Marka Čulena : 26 
+Ulica:   Masarykova : 2 
+Ulica:   Maybaumova : 15 
+Ulica:   Medvedia : 4 
+Ulica:   Medzinárodného dňa žien : 2 
+Ulica:   Metodova : 3 
+Ulica:   Michala Bosáka : 2 
+Ulica:   Mojmírova : 5 
+Ulica:   Mudroňova : 7 
+Ulica:   Murárska : 7 
+Ulica:   Obrancov mieru : 19 
+Ulica:   Orgovánová : 11 
+Ulica:   Pavla Horova : 12 
+Ulica:   Plzenská : 5 
+Ulica:   Pod dubom : 4 
+Ulica:   Pod Kalváriou : 13 
+Ulica:   Pod Kamennou baňou : 19 
+Ulica:   Pod Šalgovíkom : 5 
+Ulica:   Pod Táborom : 6 
+Ulica:   Pod Vinicami : 8 
+Ulica:   Pod Wilec hôrkou : 21 
+Ulica:   Pöschlova : 8 
+Ulica:   Puškinova : 6 
+Ulica:   Rumanova : 4 
+Ulica:   Ružová : 7 
+Ulica:   Sázavského : 11 
+Ulica:   Sedliackeho povstania : 5 
+Ulica:   Severná : 14 
+Ulica:   Slávičia : 7 
+Ulica:   Smreková : 8 
+Ulica:   Srnčia : 4 
+Ulica:   Surdok : 6 
+Ulica:   Šafárikova : 14 
+Ulica:   Škultétyho : 5 
+Ulica:   Šoltésovej : 6 
+Ulica:   Šrobárova : 12 
+Ulica:   Tatranská : 17 
+Ulica:   Tehelná : 13 
+Ulica:   Údenárska : 4 
+Ulica:   Urbánkova : 6 
+Ulica:   Vodárenská : 17 
+Ulica:   Vydumanec : 27 
+Ulica:   Wolkerova : 8 
+Ulica:   Za Kalváriou : 36 
+Ulica:   Záborského : 6 
+Ulica:   Záhradná : 17 
+Ulica:   Zápotockého : 5 
+Ulica:   Železničiarska : 18 
+Ulica:   Banícka : 11 
+Ulica:   Boženy Němcovej : 9 
+Ulica:   Čajkovského : 13 
+Ulica:   Čipkárska : 5 
+Ulica:   Gápľová : 30 
+Ulica:   Chalupkova : 14 
+Ulica:   Chmeľová : 11 
+Ulica:   Jiráskova : 22 
+Ulica:   Kukučínova : 15 
+Ulica:   Lesnícka : 12 
+Ulica:   Na brehu : 15 
+Ulica:   Námestie osloboditeľov : 3 
+Ulica:   Padlých hrdinov : 8 
+Ulica:   Pionierska : 6 
+Ulica:   Pri hati : 13 
+Ulica:   Royova : 20 
+Ulica:   Sadová : 10 
+Ulica:   Solivarská : 16 
+Ulica:   Soľnobanská : 6 
+Ulica:   Šípková : 5 
+Ulica:   Urxova : 8 
+Ulica:   Úzka : 3 
+Ulica:   Valkovská : 8 
+Ulica:   Zlatobanská : 7 
+Ulica:   Bažantia : 9 
+Ulica:   Hruny : 5 
+Ulica:   Jastrabia : 5 
+Ulica:   Kamenná : 6 
+Ulica:   Lastovičia : 3 
+Ulica:   Sekčovská : 14 
+Ulica:   Sokolia : 4 
+Ulica:   Sovia : 5 
+Ulica:   Agátová : 1 
+Ulica:   Bociania : 1 
+Ulica:   Borovicová : 2 
+Ulica:   Fintická : 15 
+Ulica:   Garbiarska : 1 
+Ulica:   Gaštanová : 4 
+Ulica:   Genplk. Jána Ambruša : 2 
+Ulica:   Haburská : 4 
+Ulica:   Herlianska : 7 
+Ulica:   Hraničná : 1 
+Ulica:   Jarná : 3 
+Ulica:   Jedľová : 1 
+Ulica:   Južná : 2 
+Ulica:   K prameňu : 6 
+Ulica:   Limbová : 2 
+Ulica:   Lúčna : 4 
+Ulica:   Mateja Huľu : 1 
+Ulica:   Mateja Murgaša : 6 
+Ulica:   Poľná : 3 
+Ulica:   Potočná : 7 
+Ulica:   Rybárska : 5 
+Ulica:   Školská : 1 
+Ulica:   Topoľová : 1 
+Ulica:   Včelárska : 2 
+Ulica:   Za traťou : 3 
+Ulica:   Alexeja Duchoňa : 1 
+Ulica:   Átriová : 6 
+Ulica:   Bachingerovka : 1 
+Ulica:   Baštová : 5 
+Ulica:   Bendíkova : 6 
+Ulica:   Björnsonova : 2 
+Ulica:   Borkut : 1 
+Ulica:   Botanická : 3 
+Ulica:   Broskyňová : 1 
+Ulica:   Budovateľská : 11 
+Ulica:   Bulharská : 1 
+Ulica:   Cemjata : 5 
+Ulica:   Dúhová : 1 
+Ulica:   Duklianska : 1 
+Ulica:   Fraňa Kráľa : 6 
+Ulica:   Hodžova : 3 
+Ulica:   Holländerova : 4 
+Ulica:   Hrušková : 2 
+Ulica:   Hviezdoslavova : 2 
+Ulica:   Jahodová : 11 
+Ulica:   Jána Béreša : 5 
+Ulica:   Jána Nováka : 6 
+Ulica:   Jána Pavla II. : 1 
+Ulica:   Jantárová : 2 
+Ulica:   Jarková : 2 
+Ulica:   Javorinská : 4 
+Ulica:   Jazdecká : 8 
+Ulica:   Jilemnického : 2 
+Ulica:   Konštantínova : 1 
+Ulica:   Kováčska : 2 
+Ulica:   Krátka : 4 
+Ulica:   Kvetná : 10 
+Ulica:   L. Novomeského : 6 
+Ulica:   Ľ. Podjavorinskej : 4 
+Ulica:   Lipová : 4 
+Ulica:   Matúša Trenčianskeho : 1 
+Ulica:   Mlynská : 6 
+Ulica:   Na Rúrkach : 11 
+Ulica:   Námestie Národného povstania : 1 
+Ulica:   Narcisová : 3 
+Ulica:   Nemčíkova : 2 
+Ulica:   Odborárska : 8 
+Ulica:   Okružná : 7 
+Ulica:   Partizánska : 2 
+Ulica:   Plavárenská : 3 
+Ulica:   Pod komínom : 2 
+Ulica:   Popradská : 5 
+Ulica:   Pustá dolina : 2 
+Ulica:   Radlinského : 2 
+Ulica:   Raymanova : 1 
+Ulica:   Sládkovičova : 8 
+Ulica:   Slivková : 1 
+Ulica:   Slnečná : 9 
+Ulica:   Slovenská : 1 
+Ulica:   Staré záhrady : 1 
+Ulica:   Stavbárska : 10 
+Ulica:   Súľovská : 2 
+Ulica:   Šidlovská : 10 
+Ulica:   Šmeralova : 4 
+Ulica:   Štefana Náhalku : 2 
+Ulica:   Turistická : 2 
+Ulica:   Veselá : 1 
+Ulica:   Veterná : 2 
+Ulica:   Východná : 1 
+Ulica:   Weberova : 1 
+Ulica:   Zabíjaná : 2 
+Ulica:   Záhradnícka : 4 
+Ulica:   Západná : 3 
+Ulica:   19. januára : 2 
+Ulica:   Bencúrova : 8 
+Ulica:   Bohúňova : 4 
+Ulica:   Jesenná : 2 
+Ulica:   K studničke : 1 
+Ulica:   Kamencová : 6 
+Ulica:   Kraskova : 3 
+Ulica:   Kutuzovova : 4 
+Ulica:   Kysucká : 6 
+Ulica:   Na vyhliadke : 4 
+Ulica:   Ondavská : 7 
+Ulica:   Palackého : 1 
+Ulica:   Palárikova : 4 
+Ulica:   Pekná : 5 
+Ulica:   Pod Debrami : 1 
+Ulica:   Pod Turňou : 1 
+Ulica:   Pri Delni : 7 
+Ulica:   Soľanková : 3 
+Ulica:   Soľná : 3 
+Ulica:   Suchoňova : 1 
+Ulica:   Suvorovova : 8 
+Ulica:   Tajovského : 8 
+Ulica:   Tokajícka : 2 
+Ulica:   Zborovská : 1 
+Ulica:   Astrová : 3 
+Ulica:   Drozdia : 1 
+Ulica:   Holubia : 3 
+Ulica:   Labutia : 4 
+Ulica:   Levanduľová : 1 
+Ulica:   Muškátová : 1 
+Ulica:   Orlia : 3 
+Ulica:   Pávia : 3 
+Ulica:   Teriakovská : 2 
+Ulica:    : 1 

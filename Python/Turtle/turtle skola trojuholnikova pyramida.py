@@ -3,6 +3,7 @@ import turtle
 pero = turtle.Turtle()
 pero.width(3)
 tabula = turtle.Screen()
+pero.speed(500)
 def trojuholnik(dlzka):
 #'''Nakreslí trojuholník so zadanou dĺžkou strany
 #:param dlzka: dĺžka strany
