@@ -61,7 +61,7 @@ body{
     margin: 0 6px;
     background-color: rgba(255, 255, 255, 0.125);
     transition: 0.2s;
-    box-shadow: 0 0 10px 5px rgba(190, 180, 180, 0.819);
+    box-shadow: 0 0 4px 3px rgba(199, 199, 199, 0.819);
 }
 
 .navLink:hover{
@@ -92,7 +92,7 @@ body{
 }
 
 #mainContentContainer{
-    box-shadow: 0 0 5px 5px rgba(182, 176, 176, 0.5), 0 0 20px 5px rgba(255, 255, 255, 0.5) inset;
+    box-shadow: 0 0 5px 5px rgba(182, 176, 176, 0.5), 0 0 10px 5px rgba(255, 255, 255, 0.5) inset;
 }
 
 #mainTextContainer{
@@ -104,15 +104,15 @@ body{
 
 #subTextContainer{
     --text-container-dark-shadow-color: rgba(170, 20, 3, 0.419);
-    --text-container-light-shadow-color: rgba(144, 37, 7, 0.8);
+    --text-container-light-shadow-color: rgba(139, 34, 11, 0.8);
     position: relative;
     flex: 1 1;
     border-radius: 50%;
+    padding: 0;
+    margin: 0;
     box-shadow: 10px 10px 15px var(--text-container-light-shadow-color), 10px 10px 15px var(--text-container-light-shadow-color) inset, -10px -10px 20px 1px var(--text-container-dark-shadow-color), -10px -10px 20px 1px var(--text-container-dark-shadow-color) inset;
     animation: spinShadowMainContainer 10s linear infinite;
 }
-
-
 
 /* box-shadow: h-offset v-offset blur-radius spread-radius color inset; */
 
@@ -136,33 +136,37 @@ body{
 
 /* text-shadow: offset-x offset-y blur-radius color; */
 
-#referatText{
+#referatTextContainer{
     display: flex;
     position: absolute;
-    /*top: 16%;
-    left: 18%;*/
     margin: 12% 6% 12% 12%;
     max-width: 75%;
     max-height: 55%;
     overflow-y: auto;
-    text-shadow: 0px 0px 15px red;
+    /*text-shadow: 0px 0px 15px red;*/
+    text-align: justify;
+    padding: 10px;
 }
 
-#referatText::-webkit-scrollbar{
-    width: 10px;
+#referatTextContainer::-webkit-scrollbar{
+    width: 3px;
 }
 
-#referatText::-webkit-scrollbar-track{
-    background: #999999
+#referatTextContainer::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, 0)
 }
 
-#referatText::-webkit-scrollbar-thumb {
+#referatTextContainer::-webkit-scrollbar-thumb {
     background: #6e6e6e; /* Thumb (scroll handle) color */
-    border-radius: 20%; /* Rounded corners for the thumb */
+    border-radius: 0%;
 }
   
-#referatText::-webkit-scrollbar-thumb:hover {
+#referatTextContainer::-webkit-scrollbar-thumb:hover {
     background: #555; /* Darker color on hover */
+}
+
+#referatText{
+    color: white;
 }
 
 #buttonArea{
@@ -179,15 +183,23 @@ body{
     width: 80%;
     height: 70%;
     background: none;
+    padding: 0;
     color: white;
+    text-shadow: 
+        2px 2px 5px black,  /* Bottom right */
+        -2px -2px 5px black, /* Top left */
+        2px -2px 5px black, /* Top right */
+        -2px 2px 5px black; /* Bottom left */
     border: solid 1px transparent;
     border-radius: 100%;
     box-shadow: 0 0 10px 2px var(--random-shadow-color);
     overflow: hidden;
-    animation: spinShadow 10s linear infinite;
+    /*animation: spinShadow 10s linear infinite;*/
+    transition: 0.2s ease-in-out;
     background-color: green, blue, orange, cyan, lightblue, white, purple;
+    overflow: auto;
 }
-
+/*
 @keyframes spinShadow {
     0%, 100% {
         box-shadow: 0 0 10px 2px var(--random-shadow-color);
@@ -195,4 +207,100 @@ body{
     50% {
         box-shadow: 0 0 10px 8px var(--random-shadow-color);
     }
+}
+*/
+
+.textChangeButton:hover{
+    background-color: var(--random-shadow-color);
+    transform: scale(1.1);
+}
+
+.textChangeButton:active{
+    transform: scale(1);
+}
+
+#massCalculatorBackCover{
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: flexbox;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+#massCalculatorContainer{
+    display: flexbox;
+    height: 60%;
+    width: 60%;
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    z-index: 2;
+    border: solid white 1px;
+    border-radius: 10px;
+}
+
+#massCalculatorCloseButton {
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  width: 50px; /* Size of the button */
+  height: 50px;
+  background-color: transparent; /* Transparent background */
+  cursor: pointer;
+  outline: none; /* Remove focus outline */
+  transform: rotate(45deg);
+  border: transparent;
+}
+
+/* Horizontal line of the cross */
+#massCalculatorCloseButton::before,
+#massCalculatorCloseButton::after {
+  content: '';
+  position: absolute;
+  background-color: #ffffff; /* Color of the cross */
+  border-radius: 4px; /* Optional rounded edges for the cross */
+}
+
+/* Horizontal line */
+#massCalculatorCloseButton::before {
+  width: 80%; /* Width of the cross bar */
+  height: 6px; /* Thickness of the cross bar */
+  top: 50%; /* Center vertically */
+  left: 10%; /* Center horizontally */
+  transform: translateY(-50%);
+}
+
+/* Vertical line */
+#massCalculatorCloseButton::after {
+  width: 6px; /* Thickness of the cross bar */
+  height: 80%; /* Height of the cross bar */
+  top: 10%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+}
+
+#massCalculatorCloseButton:hover::before,
+#massCalculatorCloseButton:hover::after {
+  background-color: rgb(150, 150, 150); /* Color of the cross */
+}
+
+#massCalculatorUsedValues{
+    margin: 5px 0 0 5px;
+    color: white;
+    font-size: 20px;
+    background: fixed;
+}
+
+#massCalculatorUserInput{
+    background: none;
+    border: solid 1px pink;
+    display: flexbox;
+    width: 100px;
+    height: 23px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
 }
