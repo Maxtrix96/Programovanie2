@@ -37,10 +37,25 @@ for (let i = 0; i < numberOfDots; i++) {
 }
 */
 
+function selectRandom(array) {
+    const randIndex = Math.floor(Math.random() * array.length);
+    return array[randIndex];
+}
+
+function generateRandomColor() {
+    const hue = Math.floor(Math.random() * 360);  // Random hue value from 0 to 360
+    const saturation = 110; // You can adjust saturation (70% for a vibrant color)
+    const lightness = 70; // You can adjust lightness (60% for a balanced color)
+    return `hsl(${hue}, ${saturation}%, ${lightness}%)`; 
+}
+
 // Function to add a span 
-function addSpan(text, parent) {
+function addSpan(text, parent, elementClass="") {
     const span = document.createElement("span");
     span.textContent = text;
+    if (!elementClass.length === 0){
+        span.classList.add(elementClass);
+    }
     parent.appendChild(span);
 }
 
@@ -52,10 +67,20 @@ function addStrong(text, parent) {
 }
 
 // Function to add a sup element for superscript
-function addSup(exponent, parent) {
+function addSup(exponent, parent, elementClass="") {
     const sup = document.createElement("sup");
     sup.textContent = exponent;
+    if (!elementClass.length === 0){
+        sup.classList.add(elementClass);
+    }
     parent.appendChild(sup);
+}
+
+// Function to add a sub element for subscript
+function addSub(text, parent) {
+    const sub = document.createElement("sub");
+    sub.textContent = text;
+    parent.appendChild(sub);
 }
 
 // Function to add a line break
@@ -112,6 +137,7 @@ function changeText1() {
         referatText
     );
     addLineBreak(referatText);
+    addLineBreak(referatText);
     
     addStrong('Supermasívne čierne diery', referatText);
     addLineBreak(referatText);
@@ -128,6 +154,7 @@ function changeText1() {
         referatText
     );
     addLineBreak(referatText);
+    addLineBreak(referatText);
     
     addStrong('Čierne diery so strednou hmotnosťou', referatText);
     addLineBreak(referatText);
@@ -137,6 +164,7 @@ function changeText1() {
         'V porovnaní s inými sú relatívne malé, s hmotnosťou medzi sto až tisíc slnečných hmôt. Taktiež sú vzácnejšie a je ich ťažšie nájsť. Najväčšie z nich by mali priemer približne 3000 km – Slovensko by sa do takejto čiernej diery zmestilo asi sedemkrát. Najčastejšie sa nachádzajú v hustých hviezdokopách alebo v trpasličích galaxiách.',
         referatText
     );
+    addLineBreak(referatText);
     addLineBreak(referatText);
     
     addStrong('Prvotné čierne diery', referatText);
@@ -158,17 +186,6 @@ function changeText1() {
     addLineBreak(referatText);
 }
 
-function selectRandom(array) {
-    const randIndex = Math.floor(Math.random() * array.length);
-    return array[randIndex];
-}
-
-function generateRandomColor() {
-    const hue = Math.floor(Math.random() * 360);  // Random hue value from 0 to 360
-    const saturation = 110; // You can adjust saturation (70% for a vibrant color)
-    const lightness = 70; // You can adjust lightness (60% for a balanced color)
-    return `hsl(${hue}, ${saturation}%, ${lightness}%)`; 
-}
 
 function randomShadowColorsForButtons() { // assign pseudo random colors to button shadows
     const textChangeButtons = document.querySelectorAll(".textChangeButton") // find all buttons
@@ -208,8 +225,8 @@ function showPopUpCalculator() {
     addSpan('Použité hodnoty:', massCalculatorUsedValues);
     addLineBreak(massCalculatorUsedValues);
 
-    addSpan('G = 6,674 × 10', massCalculatorUsedValues);
-    addSup('-12', massCalculatorUsedValues);
+    addSpan('G = 6.6743015208 × 10', massCalculatorUsedValues);
+    addSup('-11', massCalculatorUsedValues);
     addSpan(' m', massCalculatorUsedValues);
     addSup('3', massCalculatorUsedValues);
     addSpan('kg', massCalculatorUsedValues);
@@ -227,12 +244,112 @@ function showPopUpCalculator() {
     // add input box
     const massCalculatorUserInput = document.createElement("input");
     massCalculatorUserInput.id = "massCalculatorUserInput";
+    massCalculatorUserInput.placeholder = "Zadajte hmotnosť v kg";
+    // event listener for enter, incase user doesn't like using mouse
+    massCalculatorUserInput.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+          CalculateMassFromUserInput();
+        }
+    });
     massCalculatorContainer.appendChild(massCalculatorUserInput);
+    
+    // add confirm button
+    const massCalculatorUserInputSubmitButton = document.createElement("button");
+    massCalculatorUserInputSubmitButton.id = "massCalculatorUserInputSubmitButton";
+    massCalculatorUserInputSubmitButton.classList.add("textChangeButton");
+    massCalculatorUserInputSubmitButton.textContent = "Vypočítať";
+    massCalculatorUserInputSubmitButton.onclick = CalculateMassFromUserInput;
+    massCalculatorContainer.appendChild(massCalculatorUserInputSubmitButton);
 
+    // add output box for calculated radius
+    const massCalculatorRadiusOutput = document.createElement("p");
+    massCalculatorRadiusOutput.id = "massCalculatorRadiusOutput";
+    massCalculatorRadiusOutput.textContent = 'Ako desatiná čiarka je použitá bodka "."'
+    massCalculatorContainer.appendChild(massCalculatorRadiusOutput)
 }
 
 function closeMassCalculator() { // close calculator on click outside the box
     const massCalculatorBackCover = document.getElementById("massCalculatorBackCover");
     const mainContentContainer = document.getElementById("mainContentContainer");
     mainContentContainer.removeChild(massCalculatorBackCover);
+}
+
+function CalculateMassFromUserInput() {
+    const massCalculatorUserInput = document.getElementById("massCalculatorUserInput");
+    const submitted_text = massCalculatorUserInput.value;
+    const massCalculatorRadiusOutput = document.getElementById("massCalculatorRadiusOutput");
+    if (isDigit(submitted_text)){
+        var result = calculateSchwarzschildRadius(submitted_text);
+        toString(result);
+        massCalculatorRadiusOutput.textContent = `${result} m`;
+    }
+    else{
+        massCalculatorRadiusOutput.textContent = 'Zadali ste zlú hodnotu. Ako desatiná čiarka je použitá bodka "."';
+    }
+}
+
+function isDigit(input) {
+    return !isNaN(input) && input.trim() !== ''; // check if input is a number
+}
+
+function calculateSchwarzschildRadius(M){
+    const G = 6.6743015208e-11; // grav. constant in m3kg-1s-2
+    const c = 3e8; // sol in m/s
+    const Rs = ((2*G*M)/(Math.pow(c, 2))); // result in m
+    const rounded = Rs.toExponential(5) // rounded to 5 decimal places
+    return rounded;
+}
+
+function changeText2(){
+    referatTextContainer.removeChild(document.getElementById("referatText"));
+    const referatText = document.createElement("p");
+    referatText.id = "referatText";
+    referatTextContainer.append(referatText);
+
+    addStrong('Ako tesne treba stlačiť hmotu pre vytvorenie čiernej diery?', referatText);
+    addLineBreak(referatText);
+    addLineBreak(referatText);
+
+    addSpan('Teoreticky je možné vytvoriť čiernu dieru z akéhokoľvek malého či veľkého množstva hmoty. Na vypočítanie výsledného priemeru takejto extrémne stlačenej hmoty sa používa rovnica Schwarzschildovho polomeru: ', referatText);
+    // add Rs=(2GM/c^2) as a fraction
+    const formulaContainer = document.createElement("span"); // main container for formula
+    formulaContainer.id = "formulaContainer";
+    const leftSideContainer = document.createElement("span"); // container for left side of equation
+    leftSideContainer.id = "leftSideContainer";
+    leftSideContainer.textContent = "R";
+    formulaContainer.appendChild(leftSideContainer);
+
+    const leftSideSub = document.createElement("sub"); // subscript s 
+    leftSideSub.innerText = "S";
+    leftSideContainer.appendChild(leftSideSub);
+
+    const equalsSign = document.createElement("span"); // "=" sign
+    equalsSign.textContent = " = ";
+    leftSideContainer.appendChild(equalsSign);
+
+    const fractionContainer = document.createElement("span"); // container for fraction
+    fractionContainer.classList.add("fracNumerator"); // styling
+    const fractionNumerator = document.createElement("span"); // numerator content
+    fractionNumerator.textContent = "2GM";
+    fractionContainer.appendChild(fractionNumerator);
+
+    const fractionDenominatorContainer = document.createElement("span"); // denominator container + c
+    fractionDenominatorContainer.classList.add("fracDenominator");
+    fractionDenominatorContainer.textContent = "c";
+    fractionContainer.appendChild(fractionDenominatorContainer);
+
+    const fractionDenominatorExponent = document.createElement("sup"); // exponent ^2
+    fractionDenominatorExponent.textContent = "2";
+    fractionDenominatorContainer.appendChild(fractionDenominatorExponent);
+    // finalize
+    formulaContainer.appendChild(fractionContainer); // add the formula to the container
+    referatText.appendChild(formulaContainer); // add everything to whole text box
+
+    // add button to open calculator
+    const massCalculatorOpenButton = document.createElement("button");
+    massCalculatorOpenButton.classList.add("textChangeButton");
+    massCalculatorOpenButton.id = "massCalculatorOpenButton";
+    massCalculatorOpenButton.textContent = "Otvoriť kalkulačku";
+    massCalculatorOpenButton.onclick = showPopUpCalculator;
+    referatText.appendChild(massCalculatorOpenButton);
 }
