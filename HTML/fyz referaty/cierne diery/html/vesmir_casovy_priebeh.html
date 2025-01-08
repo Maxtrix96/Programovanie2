@@ -4,18 +4,45 @@
         <meta lang="sk">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>vsmir</title>
+        <title>Čierne Diery</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../node_modules/animate.css/animate.min.css">
         <link rel="stylesheet" href="../css/style.css">
     </head>
-    <body class="background">
+    <body class="background" onload="randomShadowColorsForButtons()">
         <div class="background">
             <nav id="navBar">
-                <a href="index.html" class="navLink" id="linkToMainPage">Hlavná Stránka</a>
-                <a href="galeria.html" class="navLink">Galéria Čiernych Dier</a>
-                <a href="vesmir_casovy_priebeh.html" class="navLink">Časový priebeh vesmíru</a>
+                <a href="index.html" class="navLink" >Hlavná Stránka</a>
+                <a href="anatomia_bh.html" class="navLink">Anatómia čiernych dier</a> 
+                <a href="vesmir_casovy_priebeh.html" class="navLink">História vesmíru</a>
+                <!-- <button class="navLink" onclick="showPopUpCalculator()">Kalkulačka test</button> -->
             </nav>
+        </div>
+        <div class="container" id="mainContentContainer">
+            <div id="historyMainContainer"> <!-- main container -->
+                <div id="historyContentContainer"> <!-- text/other content container -->
+                    <div id="historyTextContainer">
+                        <p>hi</p>
+                    </div>
+                </div>
+                <div id="historyTimelineContainer"> <!-- timeline container -->
+                    <button class="timelineButton" onclick="">0 Sekúnd</button>
+                    <button class="timelineButton" onclick="">10^-36 až 10^-32 sekúnd </button>
+                    <button class="timelineButton" onclick="">10^-6 sekúnd</button>
+                    <button class="timelineButton" onclick="">3 minúty</button>
+                    <button class="timelineButton" onclick="">380 tis. rokov</button>
+                    <button class="timelineButton" onclick="">380 tis. až 150 mil. rokov</button>
+                    <button class="timelineButton" onclick="">150 mil. rokov</button>
+                    <button class="timelineButton" onclick="">550 mil. rokov</button>
+                    <button class="timelineButton" onclick="">1 miliarda rokov</button>
+                    <button class="timelineButton" onclick="">A čo my? </button>
+                    <button class="timelineButton" onclick="">Čo ďalej?</button>
+                    <button class="timelineButton" onclick="">Ďalšie rozpínanie vesmíru</button>
+                    <button class="timelineButton" onclick="">Veľký kolaps</button>
+                    <button class="timelineButton" onclick="">Veľké roztrhnutie </button>
+                </div>
+            </div>
         </div>
         <script src="../js/script.js" async defer></script>
     </body>
-</html>
+</html>s

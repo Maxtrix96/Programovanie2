@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sk">
+    <head>
+        <meta lang="sk">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Čierne Diery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../node_modules/animate.css/animate.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body class="background" onload="randomShadowColorsForButtons()">
+        <div class="background">
+            <nav id="navBar">
+                <a href="index.html" class="navLink" >Hlavná Stránka</a>
+                <a href="anatomia_bh.html" class="navLink">Anatómia čiernych dier</a> 
+                <a href="vesmir_casovy_priebeh.html" class="navLink">História vesmíru</a>
+                <!-- <button class="navLink" onclick="showPopUpCalculator()">Kalkulačka test</button> -->
+            </nav>
+        </div>
+        <div class="container" id="mainContentContainer">
+            <video id="videoContainer" autoplay loop muted>
+                <source src="../images/BH_AccretionDisk_Sim_Stationary_1080.mp4" type="video/mp4">
+            </video>
+            <button class="BHAnamotyInteractiveButton" title="Horizont udalostí" id="BHEventHorizonOpenButton" onclick="BHAnatomyTextEventHorizon()">+</button>
+            <button class="BHAnamotyInteractiveButton" title="Akrečný disk" id="BHAccretiondiskOpenButton" onclick="BHAnatomyTextAccretionDisk()">+</button>
+            <button class="BHAnamotyInteractiveButton" title="Tieň horizontu udalostí" id="BHEHShadow" onclick="BHAnatomyTextEHShadow()">+</button>
+            <button class="BHAnamotyInteractiveButton" title="Fotónová sféra" id="BHPhotonSphere" onclick="BHAnatomyTextPhotonSphere()">+</button>
+            <button class="BHAnamotyInteractiveButton" title="Dopplerov efekt" id="BHDopplerEffect" onclick="BHAnatomyTextDopplerEffect()">+</button>
+            <button class="BHAnamotyInteractiveButton" title="Koróna" id="BHCorona" onclick="BHAnatomyTextCorona()">+</button>
+            <button class="BHAnamotyInteractiveButton" title="Časticové prúdy" id="BHParticleJets" onclick="BHAnatomyTextParticleJets()">+</button>
+            <button class="BHAnamotyInteractiveButton" title="Singularity" id="BHSingularity" onclick="BHAnatomyTextSingularity()">+</button>
+        </div>
+        <script src="../js/script.js" async defer></script>
+    </body>
+</html>

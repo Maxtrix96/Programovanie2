@@ -15,6 +15,12 @@ body{
     justify-content: center;
 }
 
+strong {
+    box-shadow: 0 0 4px 4px rgba(230, 52, 16, 0.466);
+    border-radius: 10px;
+    padding: 4px 6px;
+}
+
 .background{
     background-color: black;
     z-index: -1;
@@ -91,7 +97,28 @@ body{
     margin: 0 auto;
 }
 
-#mainContentContainer{
+.textContainer {
+    text-align: justify;
+}
+
+#textContainer::-webkit-scrollbar{
+    width: 3px;
+}
+
+#textContainer::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, 0)
+}
+
+#textContainer::-webkit-scrollbar-thumb {
+    background: #6e6e6e; /* Thumb (scroll handle) color */
+    border-radius: 0%;
+}
+  
+#textContainer::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color on hover */
+}
+
+#mainContentContainer {
     box-shadow: 0 0 5px 5px rgba(182, 176, 176, 0.5), 0 0 10px 5px rgba(255, 255, 255, 0.5) inset;
 }
 
@@ -103,8 +130,8 @@ body{
 }
 
 #subTextContainer{
-    --text-container-dark-shadow-color: rgba(170, 20, 3, 0.419);
-    --text-container-light-shadow-color: rgba(139, 34, 11, 0.8);
+    --text-container-dark-shadow-color: rgba(197, 34, 13, 0.382);
+    --text-container-light-shadow-color: rgba(139, 11, 11, 0.8);
     position: relative;
     flex: 1 1;
     border-radius: 50%;
@@ -177,10 +204,11 @@ body{
     flex: 1 1 25%;
     height: 100%;
     width: 100%;
-    overflow: visible;
+    overflow: auto;
 }
 
 .textChangeButton{
+    cursor: pointer;
     position: relative;
     width: 80%;
     height: 70%;
@@ -199,7 +227,7 @@ body{
     /*animation: spinShadow 10s linear infinite;*/
     transition: 0.2s ease-in-out;
     background-color: green, blue, orange, cyan, lightblue, white, purple;
-    overflow: auto;
+    overflow: visible;
 }
 /*
 @keyframes spinShadow {
@@ -222,6 +250,7 @@ body{
 }
 
 #massCalculatorOpenButton{
+    cursor: pointer;
     --random-shadow-color: rgb(228, 22, 22);
     position: absolute;
     color: white;
@@ -236,15 +265,13 @@ body{
     box-shadow: 0 0 5px 2px var(--random-shadow-color);
 }
 
-
-
-#massCalculatorBackCover{
+#massCalculatorBackCover {
     background-color: rgba(0, 0, 0, 0.85);
     z-index: 1;
     display: flexbox;
     height: 100%;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0%;
     left: 0%;
 }
@@ -262,48 +289,50 @@ body{
 }
 
 #massCalculatorCloseButton {
-  position: absolute;
-  top: 2%;
-  right: 1%;
-  width: 50px; /* Size of the button */
-  height: 50px;
-  background-color: transparent; /* Transparent background */
-  cursor: pointer;
-  outline: none; /* Remove focus outline */
-  transform: rotate(45deg);
-  border: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    width: 50px; /* Size of the button */
+    height: 50px;
+    background-color: transparent; /* Transparent background */
+    cursor: pointer;
+    outline: none; /* Remove focus outline */
+    transform: rotate(45deg);
+    border: transparent;
+    z-index: inherit;
 }
 
 /* Horizontal line of the cross */
 #massCalculatorCloseButton::before,
 #massCalculatorCloseButton::after {
-  content: '';
-  position: absolute;
-  background-color: #ffffff; /* Color of the cross */
-  border-radius: 4px; /* Optional rounded edges for the cross */
+    content: '';
+    position: absolute;
+    background-color: #ffffff; /* Color of the cross */
+    border-radius: 4px; /* Optional rounded edges for the cross */
 }
 
 /* Horizontal line */
 #massCalculatorCloseButton::before {
-  width: 80%; /* Width of the cross bar */
-  height: 6px; /* Thickness of the cross bar */
-  top: 50%; /* Center vertically */
-  left: 10%; /* Center horizontally */
-  transform: translateY(-50%);
+    width: 80%; /* Width of the cross bar */
+    height: 6px; /* Thickness of the cross bar */
+    top: 50%; /* Center vertically */
+    left: 10%; /* Center horizontally */
+    transform: translateY(-50%);
 }
 
 /* Vertical line */
 #massCalculatorCloseButton::after {
-  width: 6px; /* Thickness of the cross bar */
-  height: 80%; /* Height of the cross bar */
-  top: 10%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%);
+    width: 6px; /* Thickness of the cross bar */
+    height: 80%; /* Height of the cross bar */
+    top: 10%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
 }
 
 #massCalculatorCloseButton:hover::before,
 #massCalculatorCloseButton:hover::after {
-  background-color: rgb(150, 150, 150); /* Color of the cross */
+    background-color: rgb(150, 150, 150); /* Color of the cross */
 }
 
 #massCalculatorUsedValues{
@@ -375,4 +404,178 @@ body{
     border-top: 1px solid;
     width: 100%;
     text-align: center;
+}
+
+#videoContainer {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: visible;
+}
+
+#videoSource {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Style for the round button */
+.BHAnamotyInteractiveButton {
+    width: 20px; /* Adjust size as needed */
+    height: 20px;
+    background-color: white; /* White background */
+    border: 2px solid black; /* Optional black border */
+    border-radius: 50%; /* Makes the button round */
+    font-size: 18px; /* Size of the + */
+    font-weight: bold; /* Bold for the + */
+    color: black; /* Black + symbol */
+    text-align: center;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for style */
+    display: inline-flex; /* Centers the content perfectly */
+    justify-content: center; 
+    align-items: center;
+    transition: transform 0.2s ease; /* Add animation for interaction */
+}
+
+/* Hover effect */
+.BHAnamotyInteractiveButton:hover {
+    background-color: rgb(0, 0, 0); 
+    border: 2px solid white;
+    color: white;
+}
+
+#BHAnatomyContentContainer {
+    position: fixed;
+    display: flex;
+    top: 20%;
+    left: 20%;
+    height: 60%;
+    width: 60%;
+    z-index: 2;
+    border: 5px solid white;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.814) inset;
+}
+
+#BHAnatomyTextContainer {
+    padding: 15px 10px;
+    overflow-y: auto;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    height: 70%;
+    width: 40%;
+    border: solid 1px white;
+}
+
+#BHAnatomyImageContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(1px, 1fr));
+    gap: 2px;
+    flex: 1 1 25%;
+    height: 70%;
+    width: 55%;
+    overflow: auto;
+    position: absolute;
+    top: 13.7%;
+    left: 43%;
+}
+
+.BHAnatomyPicture {
+    width: fit-content;
+    height: fit-content;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#BHEventHorizonOpenButton {
+    position: absolute;
+    top: 43%;
+    left: 48%;
+}
+
+#BHAccretiondiskOpenButton {
+    position: absolute;
+    top: 49.5%;
+    left: 18%;
+}
+
+#BHEHShadow {
+    position: absolute;
+    top: 44%;
+    left: 52%;
+}
+
+#BHPhotonSphere {
+    position: absolute;
+    top: 59.4%;
+    left: 52%;
+}
+
+#BHDopplerEffect {
+    position: absolute;
+    top: 47%;
+    left: 20%;
+}
+
+#BHCorona {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#BHParticleJets {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#BHSingularity {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#historyMainContainer {
+    display: grid;
+    grid-template-rows: 80% 20%;
+    border: solid white 1px;
+    width: 95%;
+}
+
+#historyTimelineContainer {
+    display: grid;
+    padding: 5px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(1fr);
+    gap: 5px;
+    border: solid rgb(240, 8, 8) 1px;
+    margin: 5px;
+    justify-content: center;
+}
+
+#historyContentContainer {
+    display: flex;
+    position: relative;
+    border: solid rgb(237, 229, 11) 1px;
+    margin: 5px;
+}
+
+.timelineButton {
+    margin: auto;
+    overflow-wrap: anywhere;
+    width: 100%;
+    height: 100%;
+}
+
+#historyTextContainer {
+    border: solid 1px pink;
+    margin: 5px;
+    padding: 2px;
+    width: 100%;
 }
