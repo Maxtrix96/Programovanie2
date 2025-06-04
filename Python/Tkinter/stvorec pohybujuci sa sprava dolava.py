@@ -13,17 +13,16 @@ canvas.pack()
 stvorec = canvas.create_rectangle(0, MAX_DIMENSION//2 - LENGTH // 2, LENGTH, MAX_DIMENSION//2 + LENGTH//2, fill="blue") # priblizne v strede obrazovky
 
 class WORK_PLS():
+    def __init__(self) -> None:
+        self.distance = 50
+        self.pos_x = 0
+
     def move_square(self):
         canvas.move(stvorec, self.distance, 0)
         self.pos_x += self.distance
-        if MAX_DIMENSION - LENGTH < self.pos_x < MAX_DIMENSION or self.pos_x == 0:
+        if MAX_DIMENSION - LENGTH <= self.pos_x <= MAX_DIMENSION or self.pos_x == 0:
             self.distance *= -1
         canvas.after(SPEED, self.move_square)
-
-    def __init__(self) -> None:
-        self.distance = 15
-        self.pos_x = 0
-        self.moving_right = True
 
 amogus = WORK_PLS()
 amogus.move_square()

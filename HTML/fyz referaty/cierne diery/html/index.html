@@ -9,10 +9,10 @@
         <link rel="stylesheet" href="../../node_modules/animate.css/animate.min.css">
         <link rel="stylesheet" href="../css/style.css">
     </head>
-    <body class="background" onload="randomShadowColorsForButtons()">
+    <body class="background" onload="randomShadowColorsForButtons(), changeText(0)">
         <div class="background">
             <nav id="navBar">
-                <a href="index.html" class="navLink" >Hlavná Stránka</a>
+                <a href="index.html" class="navLink" >Čierna Diera</a>
                 <a href="anatomia_bh.html" class="navLink">Anatómia čiernych dier</a> 
                 <a href="vesmir_casovy_priebeh.html" class="navLink">História vesmíru</a>
                 <!-- <button class="navLink" onclick="showPopUpCalculator()">Kalkulačka test</button> -->
@@ -26,7 +26,7 @@
                     </p> <!-- hl. text -->
                 </div> <!-- priestor pre text -->
             </div>
-            <div class="container subContainer" id="buttonArea"> <!-- priestor pre prepínanie textov -->
+            <div class="container subContainer" id="buttonArea" onload="changeText(0)"> <!-- priestor pre prepínanie textov -->
                 <button id="BHtext1" class="textChangeButton" onclick="changeText(0)"><div class="buttonText">Čo je to čierna diera?</div></button>
                 <button id="BHtext2" class="textChangeButton" onclick="changeText(1)">Ako vznikne čierna diera?</button>
                 <button id="BHtext3" class="textChangeButton" onclick="changeText(2)">Aká veľká by bola, keby...?</button>

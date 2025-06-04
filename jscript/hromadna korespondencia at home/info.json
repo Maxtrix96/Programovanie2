@@ -1,0 +1,82 @@
+[
+  {
+    "Meno": "Anton",
+    "Priezvisko": "Belica",
+    "Pohlavie": "Muž",
+    "Adresa": "Železničná 40",
+    "Mesto": "Revúca",
+    "PSČ": "05001"
+  },
+  {
+    "Meno": "Jozef",
+    "Priezvisko": "Mrkvička",
+    "Pohlavie": "Muž",
+    "Adresa": "Mrkvová 80",
+    "Mesto": "Záhrada",
+    "PSČ": "06008"
+  },
+  {
+    "Meno": "Miroslav",
+    "Priezvisko": "Neslávny",
+    "Pohlavie": "Muž",
+    "Adresa": "Hviezdoslavova 60",
+    "Mesto": "Prešov",
+    "PSČ": "07009"
+  },
+  {
+    "Meno": "Alexandra",
+    "Priezvisko": "Biela",
+    "Pohlavie": "Žena",
+    "Adresa": "Tomášikova 70",
+    "Mesto": "Prešov",
+    "PSČ": "08001"
+  },
+  {
+    "Meno": "Dana",
+    "Priezvisko": "Popradská",
+    "Pohlavie": "Žena",
+    "Adresa": "Uličná 5",
+    "Mesto": "Revúca",
+    "PSČ": "08153"
+  },
+  {
+    "Meno": "Jana",
+    "Priezvisko": "Janíčková",
+    "Pohlavie": "Žena",
+    "Adresa": "Clementisova 1166",
+    "Mesto": "Revúca",
+    "PSČ": "08191"
+  },
+  {
+    "Meno": "Daniel",
+    "Priezvisko": "Janíčkový",
+    "Pohlavie": "Muž",
+    "Adresa": "Clementisova 1166",
+    "Mesto": "Revúca",
+    "PSČ": "03181"
+  },
+  {
+    "Meno": "Ondrej",
+    "Priezvisko": "Vlasatý",
+    "Pohlavie": "Muž",
+    "Adresa": "Hornádska 55",
+    "Mesto": "Košice",
+    "PSČ": "06191"
+  },
+  {
+    "Meno": "Žofa",
+    "Priezvisko": "Čierna",
+    "Pohlavie": "Žena",
+    "Adresa": "Tisova 69",
+    "Mesto": "Bratislava",
+    "PSČ": "79431"
+  },
+  {
+    "Meno": "Diana",
+    "Priezvisko": "Beláková",
+    "Pohlavie": "Žena",
+    "Adresa": "Oravská 50",
+    "Mesto": "Trnava",
+    "PSČ": "12345"
+  }
+]

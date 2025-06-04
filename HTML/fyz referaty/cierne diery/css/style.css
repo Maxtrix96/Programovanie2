@@ -15,12 +15,6 @@ body{
     justify-content: center;
 }
 
-strong {
-    box-shadow: 0 0 4px 4px rgba(230, 52, 16, 0.466);
-    border-radius: 10px;
-    padding: 4px 6px;
-}
-
 .background{
     background-color: black;
     z-index: -1;
@@ -99,6 +93,12 @@ strong {
 
 .textContainer {
     text-align: justify;
+}
+
+.strongTextTitle {
+    box-shadow: 0 0 4px 4px rgba(230, 52, 16, 0.466);
+    border-radius: 10px;
+    padding: 4px 6px;
 }
 
 #textContainer::-webkit-scrollbar{
@@ -380,30 +380,55 @@ strong {
     text-align: center;
 }
 
-#formulaContainer{
+/*#formulaContainer {
     color: white;
     position: relative;
     top: 10%;
     left: -39%;
 }
 
-#leftSideContainer{
+#leftSideContainer {
     font-size: 110%;
     position: absolute;
     top: 47.5%;
     left: -120%;
 }
 
-.fracNumerator{
+.fracNumerator {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
 }
 
-.fracDenominator{
+.fracDenominator {
     border-top: 1px solid;
     width: 100%;
     text-align: center;
+}
+*/
+
+.fractionContainer {
+    padding: 0;
+    margin: 0;
+}
+
+.rightSideContainer {
+    display: inline-block; 
+    text-align: center;
+}
+
+.fractionLine {
+    margin: 0px 0; 
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+.formulaExponent {
+    font-size: 11px;
+}
+
+#SRadiusRightSide {
+    position: relative;
+    top: 5%;
 }
 
 #videoContainer {
@@ -466,7 +491,7 @@ strong {
     left: 2%;
     height: 70%;
     width: 40%;
-    border: solid 1px white;
+    border: solid 3px rgb(199, 199, 199);
 }
 
 #BHAnatomyImageContainer {
@@ -544,7 +569,6 @@ strong {
 #historyMainContainer {
     display: grid;
     grid-template-rows: 80% 20%;
-    border: solid white 1px;
     width: 95%;
 }
 
@@ -553,8 +577,7 @@ strong {
     padding: 5px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(1fr);
-    gap: 5px;
-    border: solid rgb(240, 8, 8) 1px;
+    gap: 10px;
     margin: 5px;
     justify-content: center;
 }
@@ -562,8 +585,25 @@ strong {
 #historyContentContainer {
     display: flex;
     position: relative;
-    border: solid rgb(237, 229, 11) 1px;
     margin: 5px;
+    overflow-y: scroll;
+}
+
+#historyContentContainer::-webkit-scrollbar{
+    width: 3px;
+}
+
+#historyContentContainer::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, 0)
+}
+
+#historyContentContainer::-webkit-scrollbar-thumb {
+    background: #6e6e6e; /* Thumb (scroll handle) color */
+    border-radius: 0%;
+}
+  
+#historyContentContainer::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color on hover */
 }
 
 .timelineButton {
@@ -571,11 +611,41 @@ strong {
     overflow-wrap: anywhere;
     width: 100%;
     height: 100%;
+    color: white;
+    background: transparent;
+    border: 0px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 2px rgba(192, 95, 9, 0.834) inset, 0 0 5px 1px rgba(192, 95, 9, 0.834);
+    transition: 0.2s;
+    text-shadow: 
+    2px 2px 5px black,  /* Bottom right */
+    -2px -2px 5px black, /* Top left */
+    2px -2px 5px black, /* Top right */
+    -2px 2px 5px black; /* Bottom left */
+}
+
+.timelineButton:hover {
+    transform: scale(1.03);
+}
+
+.timelineButton:active {
+    transform: scale(1);
 }
 
 #historyTextContainer {
-    border: solid 1px pink;
     margin: 5px;
     padding: 2px;
     width: 100%;
+}
+
+#testIDInsertion {
+    color: pink;
+}
+
+.readableText {
+    text-shadow: 
+        2px 2px 5px black,  /* Bottom right */
+        -2px -2px 5px black, /* Top left */
+        2px -2px 5px black, /* Top right */
+        -2px 2px 5px black; /* Bottom left */
 }

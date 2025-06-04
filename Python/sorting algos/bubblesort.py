@@ -27,4 +27,4 @@ for _ in range(num_iterations):
 average_time = total_time / num_iterations
 
 # Print the average elapsed time
-print("Average elapsed time:", average_time, "seconds")
+print("Average elapsed time: ", average_time, " seconds")

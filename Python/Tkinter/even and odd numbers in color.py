@@ -1,5 +1,4 @@
 import tkinter as tk
-import random
 
 MAX_WIDTH = 1000
 MAX_HEIGHT = 1000

@@ -49,6 +49,7 @@ function addSpan(text, parent, elementClass="") {
 function addStrong(text, parent, elementClass="") {
     const strong = document.createElement("strong");
     strong.textContent = text;
+    strong.classList.add("strongTextTitle")
     if (!elementClass.length === 0){
         strong.classList.add(elementClass);
     }
@@ -323,15 +324,16 @@ function changeText2() {
 
     addSpan('Teoreticky je možné vytvoriť čiernu dieru z akéhokoľvek malého či veľkého množstva hmoty. Na vypočítanie výsledného priemeru takejto extrémne stlačenej hmoty sa používa rovnica Schwarzschildovho polomeru: ', referatText);
     // add Rs=(2GM/c^2) as a fraction
-    const formulaContainer = document.createElement("span"); // main container for formula
+    /*const formulaContainer = document.createElement("span"); // main container for formula
     formulaContainer.id = "formulaContainer";
     const leftSideContainer = document.createElement("span"); // container for left side of equation
     leftSideContainer.id = "leftSideContainer";
-    leftSideContainer.textContent = "R";
+    leftSideContainer.textContent = "r";
     formulaContainer.appendChild(leftSideContainer);
 
     const leftSideSub = document.createElement("sub"); // subscript s 
     leftSideSub.innerText = "S";
+    leftSideSub.style.fontSize = "10px";
     leftSideContainer.appendChild(leftSideSub);
 
     const equalsSign = document.createElement("span"); // "=" sign
@@ -354,7 +356,19 @@ function changeText2() {
     fractionDenominatorContainer.appendChild(fractionDenominatorExponent);
     // finalize
     formulaContainer.appendChild(fractionContainer); // add the formula to the container
-    referatText.appendChild(formulaContainer); // add everything to whole text box
+    referatText.appendChild(formulaContainer); // add everything to whole text box */
+
+    const formulaContainer = document.createElement("span");
+    formulaContainer.innerHTML = `<span class="fractionContainer">
+    r<sub>s</sub> = <span class="rightSideContainer" id="SRadiusRightSide">
+        <span>2GM</span>
+        <hr class="fractionLine">
+        <span>c<sup class="formulaExponent">2</sup></span>
+    </span>
+</span>
+
+`;
+    referatText.appendChild(formulaContainer);
 
     // add button to open calculator
     const massCalculatorOpenButton = document.createElement("button");
@@ -554,6 +568,7 @@ function BHAnatomyTextCorona() {
     // add text
     addStrong('Koróna', textParent);
     addLineBreak(textParent);
+    addLineBreak(textParent);
 
     addSpan('Slabý, turbulentný extrémne horúci oblak tesne za akrečným diskom. Fyzici ju označujú ako jedno z najextrémnejších fyzických prostredí vo vesmíre. Nachádzajú sa tu extrémne silné magnetické polia. Častice v koróne obiehajú čiernu dieru takmer rýchlosťou svetla. Astronómovia sa stále snažia bližšie určiť jej rozsah, tvar a iné vlastnosti.', textParent);
     addLineBreak(textParent);
@@ -611,3 +626,15 @@ function BHAnatomyTextSingularity() {
     imgParent.appendChild(singularityPicture);
 }
 
+function scrollToItem(targetID) {
+    const target = document.getElementById(targetID);
+    target.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    target.style.background = "grey";
+    console.log("highlited");
+    
+    setTimeout(() => {
+        target.style.background = "transparent";
+        console.log("changed back");
+    }, 1000); // highlight for easier use
+    
+}
