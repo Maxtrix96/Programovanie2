@@ -1,13 +1,13 @@
-current_gain = 12_000
+current_gain = 14_875
 gain_increment = 750
 ores_needed = 0 # amount of times needed to mine
 
 start_needed_xp = 800_000
-max_xp = 800_000
+max_xp = 1_000_000
 needed_xp_increment = 100_000 
 total_xp_gain = 0 # logging total
-current_level = 25
-current_exp = 25575
+current_level = 27
+current_exp = 397825
 exp_needed = start_needed_xp - current_exp
 
 while current_level < 60:
@@ -18,7 +18,6 @@ while current_level < 60:
     current_exp = exp_needed % current_gain # leftover xp
     current_gain += gain_increment # amount of exp added onto one ore
     max_xp += needed_xp_increment
-    exp_needed += needed_xp_increment # amount of exp new level needs
     current_level += 1 # new level reached
     total_xp_gain += exp_needed # amount of xp needed in total since start of simulation, logging
 
