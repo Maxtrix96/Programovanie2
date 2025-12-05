@@ -18,4 +18,4 @@ def bin_to_dec(num:str) -> int:
 except ValueError as err:
     print(err)"""
 
-print(bin_to_dec("010"))
+print(bin_to_dec("1010"))

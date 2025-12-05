@@ -3,7 +3,7 @@ import random
 
 franklin = t.Turtle()
 screen = t.Screen()
-franklin.speed(2)
+franklin.speed(10)
 franklin.setheading(90)
 
 def up_arrow(stepLength:float) -> None:
@@ -14,14 +14,12 @@ def up_arrow(stepLength:float) -> None:
     franklin.pendown()
 
 def down_arrow(stepLength:float) -> None:
-    franklin.bk(stepLength)
     franklin.dot(5)
-    franklin.penup()
-    franklin.bk(-stepLength)
-    franklin.pendown()
+    franklin.fd(stepLength)
+    franklin.fd(-stepLength)
 
-def draw_sequence(stepLength, givenSequences) -> None: 
-    # zoberie dlzku a tuple s tuplami so strukturou (funkcia, pocet opakovani funkcie)
+def draw_sequence(stepLength:int, givenSequences:tuple) -> None: 
+    # zoberie dlzku kroku a zoznam postupnosti, t. j. zoznam aku funkciu ma vykonat a kolko krat
     for sequence in givenSequences:
         for _ in range(sequence[1]):
             sequence[0](stepLength)
@@ -35,13 +33,18 @@ def draw_sequence(stepLength, givenSequences) -> None:
 test_sequence = []
 
 def run_test():
-    for _ in range(10):
-        test_sequence.append((random.choice([down_arrow, up_arrow]), random.randint(1, 7)))
+    for _ in range(3):
+        test_sequence.append((random.choice([down_arrow, up_arrow]), random.randint(2, 5)))
 
 
     for _ in range(len(test_sequence)):
-        draw_sequence(15, test_sequence)
+        draw_sequence(15, tuple(test_sequence))
 
-run_test()
+#run_test()
+
+draw_sequence(15, ((up_arrow, 3), (down_arrow, 2), (up_arrow, 6)))
+
+
+print("finished")
 
 screen.mainloop()
