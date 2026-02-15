@@ -43,6 +43,6 @@ def palma_evaluovaci_algoritmus() -> None:
         zadane_kody.append(vstup)
     
     for s in zadane_kody:
-        print(kontrola_doporuceneho_listu(s))
+        print("OK" if kontrola_doporuceneho_listu(s) else "Chyba")
     
 palma_evaluovaci_algoritmus()
