@@ -2,6 +2,7 @@ def kontrola_doporuceneho_listu(zadany_kod:str) -> bool:
     # retazec max. 30 znakov - zo zadania
 
     kod:str = "".join([(lambda l: l if l.isalnum() else "")(l) for l in zadany_kod]) # najprv sa zbavit medzier z kodu
+    # kod = zadany_kod.replace(" ", "") # alternativa
 
     if len(kod) != 13: # spravny kod ma byt dlzky 2 + 8 + 1 + 2 = 13, ak nie, nie je to spravny kod
         return False
@@ -43,6 +44,6 @@ def palma_evaluovaci_algoritmus() -> None:
         zadane_kody.append(vstup)
     
     for s in zadane_kody:
-        print("OK" if kontrola_doporuceneho_listu(s) else "Chyba")
+        print("OK" if kontrola_doporuceneho_listu(s) else "CHYBA")
     
-palma_evaluovaci_algoritmus()
+palma_evaluovaci_algoritmus() 
